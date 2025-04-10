@@ -10,6 +10,17 @@
   --color-primary: #240d59;
   --color-secondary: #443c68;
   --color-accent: #cf71ff;
+  --color-border: rgba(255, 255, 255, 0.24);
+
+  --animate-slide-in: 1.5s slide-in;
+  @keyframes slide-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

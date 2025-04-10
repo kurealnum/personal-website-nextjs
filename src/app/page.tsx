@@ -3,11 +3,14 @@ import { Button } from "@heroui/button";
 export default function Page() {
   return (
     <div className="flex-col items-center">
-      <section className="flex h-screen flex-col items-center justify-center">
+      <section className="flex h-[94vh] flex-col items-center justify-center">
         <h1 className="from-secondary to-accent bg-linear-to-b from-10% bg-clip-text text-6xl text-transparent">
           hi, i&apos;m Oscar
         </h1>
-        <Button className="border-accent mt-8 rounded-4xl border border-solid px-8 py-2">
+        <Button
+          disableRipple
+          className="border-accent mt-8 rounded-4xl border border-solid px-8 py-2"
+        >
           about me
         </Button>
       </section>
