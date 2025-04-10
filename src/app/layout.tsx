@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import CustomNavBar from "@/components/CustomNavBar";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={outfit.className}>
+        <CustomNavBar />
         <Providers>{children}</Providers>
       </body>
     </html>
