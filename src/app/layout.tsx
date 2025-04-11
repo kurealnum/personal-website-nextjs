@@ -21,12 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark animate-zoom-in">
-      <body
-        className={
-          outfit.className +
-          " bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-[#1d4ed8] via-[#1e40af] to-[#111827]"
-        }
-      >
+      <body className={outfit.className}>
         <CustomNavBar />
         <Providers>{children}</Providers>
       </body>

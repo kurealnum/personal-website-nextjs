@@ -1,15 +1,21 @@
+import NameSphere from "@/components/NameSphere";
 import { Button } from "@heroui/button";
+import { Link } from "@heroui/react";
+
+// <h1 className="from-secondary to-accent bg-linear-to-b from-10% bg-clip-text text-7xl text-transparent">
+//   hi, i&apos;m Oscar
+// </h1>
 
 export default function Page() {
   return (
     <div className="flex-col items-center">
       <section className="flex h-[94vh] flex-col items-center justify-center">
-        <h1 className="from-secondary to-accent bg-linear-to-b from-10% bg-clip-text text-6xl text-transparent">
-          hi, i&apos;m Oscar
-        </h1>
+        <NameSphere />
         <Button
           disableRipple
-          className="border-accent mt-8 rounded-4xl border border-solid px-8 py-2"
+          className="border-accent bg-background/60 mt-8 rounded-4xl border border-solid px-8 py-2"
+          as={Link}
+          href="#about-me"
         >
           about me
         </Button>
