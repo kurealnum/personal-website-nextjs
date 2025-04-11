@@ -20,8 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark animate-slide-in">
-      <body className={outfit.className}>
+    <html lang="en" className="dark animate-zoom-in">
+      <body
+        className={
+          outfit.className +
+          " bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-[#1d4ed8] via-[#1e40af] to-[#111827]"
+        }
+      >
         <CustomNavBar />
         <Providers>{children}</Providers>
       </body>
