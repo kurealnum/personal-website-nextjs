@@ -4,7 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import CustomNavBar from "@/components/CustomNavBar";
 
-const outfit = Outfit({
+export const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
 });

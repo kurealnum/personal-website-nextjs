@@ -1,23 +1,24 @@
 "use client";
-
-import { animate, createScope } from "animejs";
-import { useEffect, useRef } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Center, OrbitControls } from "@react-three/drei";
+import CurvedText from "./CurvedText";
 
 export default function NameSphere() {
-  const root = useRef(null);
-  const scope = useRef(null);
-
-  useEffect(() => {
-    scope.current = createScope({ root }).add((scope) => {
-      animate("#name-sphere", { x: "100px" });
-    });
-
-    return () => scope.current.revert();
-  }, []);
-
   return (
-    <div ref={root}>
-      <div id="name-sphere" className="bg-accent h-32 w-32 rounded-[50%]"></div>
-    </div>
+    <Canvas fallback={"Something went wrong when rendering the globe."}>
+      <OrbitControls autoRotate={false} enableZoom={false} />
+      <Center position={[0, 0, 2]}>
+        <mesh>
+          <CurvedText text={"hi,I'm oscar"} />
+        </mesh>
+      </Center>
+      <Center>
+        <mesh visible position={[0, 0, -0.5]} castShadow>
+          <pointLight position={[10, 10, 10]} color={"white"} />
+          <sphereGeometry args={[2.2, 48, 48]} />
+          <meshBasicMaterial attach={"material"} color={"purple"} />
+        </mesh>
+      </Center>
+    </Canvas>
   );
 }
