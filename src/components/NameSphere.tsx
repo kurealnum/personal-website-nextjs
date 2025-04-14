@@ -1,15 +1,27 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
-import { Center, OrbitControls } from "@react-three/drei";
-import CurvedText from "./CurvedText";
+import { Center, OrbitControls, Text3D } from "@react-three/drei";
 
 export default function NameSphere() {
   return (
     <Canvas fallback={"Something went wrong when rendering the globe."}>
       <OrbitControls autoRotate={false} enableZoom={false} />
+      <directionalLight position={[0, 0, -1]} />
+      <directionalLight position={[0, 0, 1]} />
+      <directionalLight position={[1, 1, 1]} />
+      <ambientLight intensity={0.2} />
       <Center position={[0, 0, 2]}>
-        <mesh>
-          <CurvedText text={"hi,I'm oscar"} />
+        <mesh castShadow>
+          <Text3D
+            font={"/OutfitMedium.typeface.json"}
+            size={0.5}
+            height={0.01}
+            position={[3, 3, 0.32]}
+            bevelEnabled
+          >
+            {"hi, I'm oscar"}
+            <meshNormalMaterial attach={"material"} />
+          </Text3D>
         </mesh>
       </Center>
       <Center>
