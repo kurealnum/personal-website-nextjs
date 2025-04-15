@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
 import CustomNavBar from "@/components/CustomNavBar";
 
 const outfit = Outfit({
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="dark animate-zoom-in">
       <body className={outfit.className}>
         <CustomNavBar />
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   );
