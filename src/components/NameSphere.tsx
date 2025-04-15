@@ -8,8 +8,22 @@ import {
   Text3D,
 } from "@react-three/drei";
 import { Vector3 } from "three";
+import { useEffect, useState } from "react";
 
 export default function NameSphere() {
+  const [size, setSize] = useState(2);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 800) {
+        setSize(1.2);
+      }
+      if (window.innerWidth < 550) {
+        setSize(0.8);
+      }
+    }
+  }, [size]);
+
   return (
     <Canvas fallback={"Something went wrong when rendering the globe."}>
       <OrbitControls autoRotate={false} enableZoom={false} />
@@ -52,9 +66,11 @@ export default function NameSphere() {
         <mesh castShadow>
           <Text3D
             font={"/OutfitMedium.typeface.json"}
-            size={2}
+            size={size}
             height={0.01}
             bevelEnabled
+            curveSegments={128}
+            position={[0, 0, 0]}
           >
             {"hi, I'm oscar"}
             <meshPhysicalMaterial attach={"material"} color={"white"} />

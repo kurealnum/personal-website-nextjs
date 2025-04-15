@@ -1,54 +1,39 @@
+import AboutMeTabs from "@/components/AboutMeTabs";
 import NameSphere from "@/components/NameSphere";
-import { Button } from "@heroui/button";
-import { Link } from "@heroui/react";
-
-// <h1 className="from-secondary to-accent bg-linear-to-b from-10% bg-clip-text text-7xl text-transparent">
-//   hi, i&apos;m Oscar
-// </h1>
+import Image from "next/image";
 
 export default function Page() {
   return (
     <div className="flex-col items-center">
-      <section className="flex h-[94vh] flex-col items-center justify-center">
+      <section className="flex h-[91vh] flex-col items-center justify-center">
         <NameSphere />
-        <Button
-          disableRipple
-          className="border-accent bg-background/60 mt-8 rounded-4xl border border-solid px-8 py-2"
-          as={Link}
-          href="#about-me"
-        >
-          about me
-        </Button>
+        <button className="border-accent bg-background/60 mt-8 rounded-4xl border border-solid px-8 py-2">
+          <a href="#about-me">about-me</a>
+        </button>
       </section>
-      <section className="flex flex-col items-center" id="about-me">
+      <section
+        className="mt-16 flex h-screen flex-col items-center"
+        id="about-me"
+      >
         <h1 className="from-secondary to-accent bg-linear-to-b from-10% bg-clip-text text-6xl text-transparent">
           about me
         </h1>
-        <div className="mt-8 mb-8 flex max-w-2xl flex-col gap-2 text-center font-light">
-          <p>
+        <div className="mt-12 flex flex-row flex-wrap items-center justify-center gap-8 font-light">
+          <Image
+            className="m-0 rounded-full p-0"
+            src="/profile_picture_human.png"
+            alt="Profile picture"
+            width={100}
+            height={100}
+          />
+          <p className="m-0 max-w-[379px] p-0">
             Hello there! I’m Oscar, an aspiring full-stack web developer
-            specializing in backend development. I'm also known as kureal or
-            kurealnum in the online world!
+            specializing in backend development. I&apos;m also known as kureal
+            or kurealnum in the online world!
           </p>
-          <p className="general-text">
-            I primarily use Django as my backend framework, although I'm open to
-            learning other frameworks. I'm working on{" "}
-            <a
-              className="general-text-links"
-              href="https://github.com/artrixdotdev/tortillas"
-            >
-              Tortilla
-            </a>{" "}
-            at the moment -- it's a library/TUI for torrenting, made entirely in
-            Rust. My second most recent project is byeAI, a developer content
-            creation site that completely disallows AI generated or assisted
-            content. It's built with React, Django, Nginx, and Docker. Check it
-            out{" "}
-            <a href="https://byeai.dev" className="general-text-links">
-              here
-            </a>
-            .
-          </p>
+        </div>
+        <AboutMeTabs />
+        <div className="">
           <p className="general-text">
             If you'd like to see some of my other work in deployment, check
             <a href="https://nonprofitlink.org/" className="general-text-links">
