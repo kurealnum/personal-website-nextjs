@@ -1,15 +1,20 @@
 import AboutMeTabs from "@/components/AboutMeTabs";
 import NameSphere from "@/components/NameSphere";
+import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
     <div className="flex-col items-center">
       <section className="flex h-[91vh] flex-col items-center justify-center">
         <NameSphere />
-        <button className="border-accent bg-background/60 mt-8 rounded-4xl border border-solid px-8 py-2">
-          <a href="#about-me">about-me</a>
-        </button>
+        <Link
+          className={buttonVariants({ variant: "outline" })}
+          href="#about-me"
+        >
+          about me
+        </Link>
       </section>
       <section
         className="mt-16 flex h-screen flex-col items-center"

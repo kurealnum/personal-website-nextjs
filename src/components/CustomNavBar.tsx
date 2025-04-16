@@ -4,28 +4,32 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
+  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { Separator } from "./ui/separator";
 
 export default function CustomNavBar() {
   return (
-    <NavigationMenu className="font-outfit mt-4 ml-6 h-8 justify-center text-xl font-extralight md:justify-start">
+    <NavigationMenu className="font-outfit mt-4 ml-4 h-8 justify-center text-2xl font-light md:justify-start">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <p className="hover:text-accent hover:text-shadow-accent/40 cursor-default text-3xl font-light transition-all hover:text-shadow-md">
-            &lt;Oscar/&gt;
-          </p>
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>whoami</NavigationMenuTrigger>
           <NavigationMenuContent aria-label="Static Actions">
-            <ul>
+            <ul className="w-[200px]">
               {/* <DropdownItem key="projects">projects</DropdownItem> */}
               {/* <DropdownItem key="contact-me">contact me</DropdownItem> */}
               {/* <DropdownItem key="resume">resume</DropdownItem> */}
               {/* <DropdownItem key="brag-doc">brag doc</DropdownItem> */}
-              <p>hi</p>
+              <NavigationMenuLink href="#about-me">about me</NavigationMenuLink>
+              <NavigationMenuLink href="#projects">projects</NavigationMenuLink>
+              <NavigationMenuLink href="#contact-me">
+                contact me
+              </NavigationMenuLink>
+              <Separator />
+              <NavigationMenuLink href="#resume">resume</NavigationMenuLink>
+              <NavigationMenuLink href="#brag-doc">brag doc</NavigationMenuLink>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
