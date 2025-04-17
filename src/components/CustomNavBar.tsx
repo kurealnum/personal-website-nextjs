@@ -1,5 +1,3 @@
-"use client";
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,16 +10,17 @@ import { Separator } from "./ui/separator";
 
 export default function CustomNavBar() {
   return (
-    <NavigationMenu className="font-outfit mt-4 ml-4 h-8 justify-center text-2xl font-light md:justify-start">
+    <NavigationMenu
+      className="font-outfit mt-4 ml-4 h-8 justify-center text-2xl font-light md:justify-start"
+      delayDuration={0}
+    >
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>whoami</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-xl">
+            whoami
+          </NavigationMenuTrigger>
           <NavigationMenuContent aria-label="Static Actions">
-            <ul className="w-[200px]">
-              {/* <DropdownItem key="projects">projects</DropdownItem> */}
-              {/* <DropdownItem key="contact-me">contact me</DropdownItem> */}
-              {/* <DropdownItem key="resume">resume</DropdownItem> */}
-              {/* <DropdownItem key="brag-doc">brag doc</DropdownItem> */}
+            <ul className="w-[180px]">
               <NavigationMenuLink href="#about-me">about me</NavigationMenuLink>
               <NavigationMenuLink href="#projects">projects</NavigationMenuLink>
               <NavigationMenuLink href="#contact-me">

@@ -78,14 +78,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background:
-    radial-gradient(at 60% 7%, var(--background) 0px, transparent 50%),
-    radial-gradient(at 80% 2%, var(--primary) 0px, transparent 50%),
-    radial-gradient(at 90% 1%, var(--primary) 0px, transparent 50%),
-    radial-gradient(at 27% 88%, var(--primary) 0px, transparent 50%),
-    var(--background);
-}
+/* body { */
+/*   background: */
+/*     radial-gradient(at 60% 7%, var(--background) 0px, transparent 50%), */
+/*     radial-gradient(at 80% 2%, var(--primary) 0px, transparent 50%), */
+/*     radial-gradient(at 90% 1%, var(--primary) 0px, transparent 50%), */
+/*     radial-gradient(at 27% 88%, var(--primary) 0px, transparent 50%), */
+/*     var(--background); */
+/* } */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -138,7 +138,7 @@ body {
   --popover-foreground: oklch(0.985 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
+  --muted: rgba(0, 0, 0, 0);
   --muted-foreground: oklch(0.708 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
