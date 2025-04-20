@@ -23,7 +23,10 @@ export default function AboutMe() {
   };
 
   return (
-    <section id="about-me" className="min-h-[90vh] pt-8 [&_p]:font-light">
+    <section
+      id="about-me"
+      className="mx-auto min-h-[90vh] max-w-[500px] pt-8 [&_p]:font-light"
+    >
       <div className="mb-4 flex flex-row justify-center gap-4">
         <Button variant={"outline"} onClick={() => scrollToHelper(0)}>
           what I&apos;m doing
@@ -38,7 +41,7 @@ export default function AboutMe() {
             <Tab>
               <p>
                 I&apos;ve recently been accepted to a national data science
-                research program, hosted by The Coding School, and a number of
+                research program, hosted by The Coding School and a number of
                 notable organizations such as Columbia University, MIT,
                 Stanford, Berkeley, and more!
               </p>

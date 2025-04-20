@@ -11,7 +11,7 @@ import { Vector3 } from "three";
 
 export default function Landing() {
   return (
-    <Canvas fallback={"Something went wrong when rendering the globe."}>
+    <Canvas fallback={"Something went wrong when rendering the landing."}>
       <OrbitControls autoRotate={false} enableZoom={false} />
       <Environment resolution={32}>
         <group rotation={[-Math.PI / 4, -0.3, 0]}>
