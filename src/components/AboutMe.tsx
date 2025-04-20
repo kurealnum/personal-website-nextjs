@@ -23,8 +23,8 @@ export default function AboutMe() {
   };
 
   return (
-    <section id="about-me" className="h-screen pt-8 [&_p]:font-light">
-      <div className="flex flex-row justify-center gap-4">
+    <section id="about-me" className="min-h-[90vh] pt-8 [&_p]:font-light">
+      <div className="mb-4 flex flex-row justify-center gap-4">
         <Button variant={"outline"} onClick={() => scrollToHelper(0)}>
           what I&apos;m doing
         </Button>

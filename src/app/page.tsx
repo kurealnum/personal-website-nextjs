@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import ContentThumbnail from "@/components/ContentThumbnail";
 import AboutMe from "@/components/AboutMe";
+import Skill from "@/components/Skill";
 
 export default function Page() {
   return (
@@ -129,9 +130,67 @@ export default function Page() {
               Resolve, OBS, and ironically, FFmpeg.
             </p>
           </ContentThumbnail>
+          <ContentThumbnail href="https://github.com/kurealnum">
+            <h3>or just everything</h3>
+            <p>
+              Or just check out the entirety of my GitHub. As of April 2025, I
+              have a 4 month long commit streak (with no cheating, of course!)
+            </p>
+          </ContentThumbnail>
         </div>
       </section>
-      <section id="skills"></section>
+      <section
+        id="skills"
+        className="mx-auto mt-16 flex min-h-screen w-[80%] flex-col items-center"
+      >
+        <h1 className="mt-4 text-3xl">skillz</h1>
+        <p className="text-center font-light">
+          or all the noteworthy things that I know how to use
+        </p>
+        <h2 className="mt-8 text-2xl">web dev stack</h2>
+        <div className="flex flex-row flex-wrap justify-center gap-2">
+          <Skill src="javascript-original.svg" />
+          <Skill src="typescript.svg" />
+          <Skill src="python-original.svg" />
+          <Skill src="css3-original.svg" />
+          <Skill src="html5-original.svg" />
+          <Skill src="react-original.svg" />
+          <Skill
+            src="reactrouter.svg"
+            className="rounded-md bg-neutral-300 p-1"
+          />
+          <Skill src="tailwindcss-original.svg" />
+          <Skill
+            src="django-plain.svg"
+            className="rounded-md bg-neutral-300 p-2"
+          />
+          <Skill src="nginx.svg" />
+          <Skill
+            src="djangorest-original.svg"
+            className="rounded-md bg-neutral-300"
+          />
+          <Skill src="docker-plain.svg" />
+        </div>
+        <h2 className="mt-8 text-2xl">general tools</h2>
+        <div className="flex flex-row flex-wrap justify-center gap-2">
+          <Skill src="c-original.svg" />
+          <Skill src="java-original.svg" />
+          <Skill src="rust.svg" />
+          <Skill src="git-original.svg" />
+          <Skill src="sqlite-original.svg" />
+          <Skill src="postgresql-plain.svg" />
+          <Skill src="linux.svg" />
+          <Skill src="latex.svg" />
+        </div>
+        <h2 className="mt-8 text-2xl">misc. tech</h2>
+        <div className="flex flex-row flex-wrap justify-center gap-2">
+          <Skill src="neovim-original.svg" />
+          <Skill src="archlinux-original.svg" />
+          <Skill src="arduino.svg" />
+          <Skill src="davinci.svg" />
+          <Skill src="figma.svg" />
+        </div>
+      </section>
       <section id="contact-me"></section>
     </div>
   );

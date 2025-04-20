@@ -23,6 +23,7 @@ export default function CustomNavBar() {
             <ul className="w-[180px]">
               <NavigationMenuLink href="#about-me">about me</NavigationMenuLink>
               <NavigationMenuLink href="#projects">projects</NavigationMenuLink>
+              <NavigationMenuLink href="#skills">skillz</NavigationMenuLink>
               <NavigationMenuLink href="#contact-me">
                 contact me
               </NavigationMenuLink>
