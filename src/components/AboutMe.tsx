@@ -67,11 +67,12 @@ export default function AboutMe() {
           </CarouselItem>
           <CarouselItem>
             <Tab>
-              <p>
-                Where to begin... I&apos;ve been mountain biking since I was 4
-                years old, and racing since I was 6. Since then, I&apos;ve
-                participated in multiple interscholastic teams, even helping to
-                start one locally when I was 14.
+              <p className="text-center text-sm">
+                Hey! If you want to know more about me <i>personally</i>, check{" "}
+                <Button variant={"link"} asChild size={"link"}>
+                  <a href="#me">this</a>
+                </Button>{" "}
+                out!
               </p>
               <p>
                 When I was 15, I decided to start focusing more on my education

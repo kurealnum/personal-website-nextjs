@@ -41,7 +41,7 @@ export default function Page() {
       </section>
       <AboutMe />
       <section id="projects" className="mb-8">
-        <h2 className="mx-auto mb-8 text-center text-3xl">projects</h2>
+        <h2 className="mx-auto mb-8 text-center">projects</h2>
         <div className="mx-auto flex max-w-[80%] flex-row flex-wrap items-start justify-center gap-8 gap-y-8">
           <ContentThumbnail
             imgSrc="/tortillasthumbnail.png"
@@ -140,11 +140,11 @@ export default function Page() {
         id="skills"
         className="mx-auto mt-16 flex min-h-screen w-[80%] flex-col items-center"
       >
-        <h1 className="mt-4 text-3xl">skillz</h1>
+        <h2 className="mt-4 text-3xl">skillz</h2>
         <p className="text-center font-light">
           or all the noteworthy things that I know how to use
         </p>
-        <h2 className="mt-8 text-xl">web dev stack</h2>
+        <h3 className="mt-8">web dev stack</h3>
         <div className="flex max-w-[440px] flex-row flex-wrap justify-center gap-2">
           <Skill src="javascript-original.svg" />
           <Skill src="typescript.svg" />
@@ -165,7 +165,7 @@ export default function Page() {
           />
           <Skill src="docker-plain.svg" />
         </div>
-        <h2 className="mt-8 text-xl">general tools</h2>
+        <h3 className="mt-8">general tools</h3>
         <div className="flex max-w-[300px] flex-row flex-wrap justify-center gap-2">
           <Skill src="c-original.svg" />
           <Skill src="java-original.svg" />
@@ -176,7 +176,7 @@ export default function Page() {
           <Skill src="linux.svg" />
           <Skill src="latex.svg" />
         </div>
-        <h2 className="mt-8 text-xl">misc. tech</h2>
+        <h3 className="mt-8">misc. tech</h3>
         <div className="flex flex-row flex-wrap justify-center gap-2">
           <Skill src="neovim-original.svg" />
           <Skill src="archlinux-original.svg" />
@@ -187,7 +187,7 @@ export default function Page() {
       </section>
       <section
         id="content"
-        className="mx-auto flex w-[90%] flex-col items-center"
+        className="mx-auto flex min-h-[80vh] w-[90%] flex-col items-center"
       >
         <h2 className="text-2xl">content creation</h2>
         <p className="max-w-[500px] p-4 font-light">
@@ -204,6 +204,45 @@ export default function Page() {
           I&apos;ve been featured in Dev.to&apos;s &quot;Top 7 Posts of the
           week&quot; 3 times, and I&apos;m also an active community moderator.
         </p>
+      </section>
+      <section id="me" className="mx-auto flex w-[90%] flex-col items-center">
+        <h2>me</h2>
+        <h3 className="mt-4">mountainbiking</h3>
+        <p>
+          I&apos;ve been mountain biking since I was 4 years old, and racing
+          since I was 6. Since then, I&apos;ve participated in multiple
+          interscholastic teams, even helping to start one locally when I was
+          14. My final highschool level race(s) will be occuring this May{" "}
+          {"& April"}, although I intend to continue to race well after
+          highschool is over.
+        </p>
+        <h3 className="mt-4">teaching</h3>
+        <p>
+          Teaching is a strong passion of mine. As I age out of the mountain
+          biking team I helped start, I plan to act as a coach for the next
+          generation of youth riders. Additionally, I&apos;ve spent a great deal
+          of time tutoring and learning how to optimally teach. I spent a few
+          hours a week every day of my senior high school year working with
+          students in Algebra I, Algebra II, Trigonometry, and more. I&apos;ve
+          also privately tutored students online, creating lesson plans and
+          curating practice problems.
+        </p>
+        <h3 className="mt-4">sim racing</h3>
+        <p className="mb-4">
+          I <i>really</i> like cars. Consequently, I spend a lot of my free time
+          racing/driving virtually. I own a{" "}
+          <Button variant={"link"} asChild size={"link"}>
+            <Link href="https://www.logitechg.com/en-us/products/driving/g923-trueforce-sim-racing-wheel.html">
+              G923
+            </Link>
+          </Button>{" "}
+          racing wheel (nothing fancy, but I&apos;m not complaining!) and play
+          Assetto Corsa, BeamNG Drive, Dirt Rally 2.0, and more! Here&apos;s a
+          short clip of me &quot;rallying&quot; a Porsche 911 Weissach on an
+          Assetto Corsa touge map.
+        </p>
+        <YouTubeVideo id="ZqvR1H9QSNg" />
+        <p className="mt-16">thanks for reading!</p>
       </section>
       <section
         id="contact-me"

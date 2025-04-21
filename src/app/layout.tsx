@@ -19,7 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark animate-zoom-in">
+    <html
+      lang="en"
+      className="dark animate-zoom-in [&_h2]:text-2xl [&_h3]:text-lg [&_p]:max-w-[500px] [&_p]:font-light"
+    >
       <body className={outfit.className}>
         <CustomNavBar />
         {children}

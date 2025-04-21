@@ -27,6 +27,7 @@ export default function CustomNavBar() {
               <NavigationMenuLink href="#contact-me">
                 contact me
               </NavigationMenuLink>
+              <NavigationMenuLink href="#me">me</NavigationMenuLink>
               <Separator />
               <NavigationMenuLink href="#resume">resume</NavigationMenuLink>
               <NavigationMenuLink href="#brag-doc">brag doc</NavigationMenuLink>
