@@ -1,24 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ChevronDown } from "lucide-react";
 import YouTubeVideo from "./YouTubeVideo";
 import Link from "next/link";
+import LoadIn from "./LoadIn";
 
 export default function Personal() {
   return (
-    <motion.div
-      initial={{ opacity: 0, transform: "translateY(100px)" }}
-      whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-      transition={{
-        duration: 1.3,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.1,
-      }}
-      className="flex flex-col items-center"
-    >
+    <LoadIn>
       <h2>me</h2>
       <h3 className="mt-4">mountainbiking</h3>
       <p>
@@ -58,6 +48,6 @@ export default function Personal() {
       <Link href={"#contact-me"} className="h-10">
         <ChevronDown />
       </Link>
-    </motion.div>
+    </LoadIn>
   );
 }

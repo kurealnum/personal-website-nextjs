@@ -1,21 +1,11 @@
 "use client";
 
+import LoadIn from "./LoadIn";
 import Skill from "./Skill";
-import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <motion.div
-      initial={{ opacity: 0, transform: "translateY(100px)" }}
-      whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-      transition={{
-        duration: 1.3,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.1,
-      }}
-      className="flex flex-col items-center"
-    >
+    <LoadIn>
       <h2 className="mt-4 text-3xl">skillz</h2>
       <p className="text-center font-light">
         or all the noteworthy things that I know how to use
@@ -60,6 +50,6 @@ export default function Skills() {
         <Skill src="davinci.svg" />
         <Skill src="figma.svg" />
       </div>
-    </motion.div>
+    </LoadIn>
   );
 }

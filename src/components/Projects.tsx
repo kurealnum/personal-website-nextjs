@@ -1,19 +1,10 @@
 "use client";
 import ContentThumbnail from "./ContentThumbnail";
-import { motion } from "framer-motion";
+import LoadIn from "./LoadIn";
 
 export default function Projects() {
   return (
-    <motion.div
-      initial={{ opacity: 0, transform: "translateY(100px)" }}
-      whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-      transition={{
-        duration: 1.3,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.1,
-      }}
-    >
+    <LoadIn>
       <h2 className="mx-auto mb-8 text-center">projects</h2>
       <div className="mx-auto flex max-w-[80%] flex-row flex-wrap items-start justify-center gap-8 gap-y-8">
         <ContentThumbnail
@@ -108,6 +99,6 @@ export default function Projects() {
           </p>
         </ContentThumbnail>
       </div>
-    </motion.div>
+    </LoadIn>
   );
 }

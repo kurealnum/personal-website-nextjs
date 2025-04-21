@@ -1,22 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import YouTubeVideo from "./YouTubeVideo";
+import LoadIn from "./LoadIn";
 
 export default function Content() {
   return (
-    <motion.div
-      initial={{ opacity: 0, transform: "translateY(100px)" }}
-      whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-      transition={{
-        duration: 1.3,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.1,
-      }}
-      className="flex flex-col items-center"
-    >
+    <LoadIn>
       <h2 className="text-2xl">content creation</h2>
       <p className="max-w-[500px] p-4 font-light">
         As I mentioned in the projects section, I run and manage a YouTube
@@ -32,6 +22,6 @@ export default function Content() {
         I&apos;ve been featured in Dev.to&apos;s &quot;Top 7 Posts of the
         week&quot; 3 times, and I&apos;m also an active community moderator.
       </p>
-    </motion.div>
+    </LoadIn>
   );
 }
