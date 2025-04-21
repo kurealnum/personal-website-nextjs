@@ -6,7 +6,6 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Separator } from "./ui/separator";
 
 export default function CustomNavBar() {
   return (
@@ -20,19 +19,24 @@ export default function CustomNavBar() {
             whoami
           </NavigationMenuTrigger>
           <NavigationMenuContent aria-label="Static Actions">
-            <ul className="w-[180px]">
-              <NavigationMenuLink href="#about-me">about me</NavigationMenuLink>
+            <ul className="w-[150px]">
+              <NavigationMenuLink href="#about-me">
+                what I do
+              </NavigationMenuLink>
               <NavigationMenuLink href="#projects">projects</NavigationMenuLink>
               <NavigationMenuLink href="#skills">skillz</NavigationMenuLink>
-              <NavigationMenuLink href="#contact-me">
-                contact me
-              </NavigationMenuLink>
               <NavigationMenuLink href="#me">me</NavigationMenuLink>
-              <Separator />
-              <NavigationMenuLink href="#resume">resume</NavigationMenuLink>
-              <NavigationMenuLink href="#brag-doc">brag doc</NavigationMenuLink>
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink href="#contact-me">contact me</NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink href="#resume">resume</NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink href="#brag-doc">brag doc</NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

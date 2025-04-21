@@ -16,43 +16,49 @@ export default function Landing() {
       <Environment resolution={32}>
         <group rotation={[-Math.PI / 4, -0.3, 0]}>
           <Lightformer
-            intensity={20}
+            intensity={2}
             rotation-x={Math.PI / 2}
             position={[0, 5, 1]}
             scale={[10, 10, 1]}
+            color={"#240d59"}
           />
           <Lightformer
             intensity={2}
             rotation-y={Math.PI / 2}
-            position={[-5, 1, -1]}
+            position={[0, 0, 3]}
             scale={[10, 2, 1]}
+            color={"#240d59"}
           />
           <Lightformer
-            intensity={2}
+            intensity={20}
             rotation-y={Math.PI / 2}
-            position={[-5, -1, -1]}
+            position={[0, 3, 5]}
             scale={[10, 2, 1]}
+            color={"#240d59"}
           />
           <Lightformer
             intensity={2}
             rotation-y={-Math.PI / 2}
             position={[10, 1, 0]}
             scale={[20, 2, 1]}
+            color={"#240d59"}
           />
           <Lightformer
             type="ring"
             intensity={2}
             rotation-y={Math.PI / 2}
-            position={[-0.1, -1, -5]}
+            position={[0.1, 1, 5]}
             scale={10}
+            color={"#240d59"}
           />
         </group>
       </Environment>
+      <ambientLight intensity={5} color={"#240d59"} />
       <Center position={[0, 0, 2.2]}>
         <mesh castShadow>
           <Text3D
             font={"/OutfitMedium.typeface.json"}
-            size={1.9}
+            size={1}
             height={0.01}
             bevelEnabled
             curveSegments={128}
@@ -73,7 +79,7 @@ function CameraRig({ v = new Vector3() }) {
   return useFrame((state) => {
     const t = state.clock.elapsedTime;
     state.camera.position.lerp(
-      v.set(Math.sin(t / 5), 0, 12 + Math.cos(t / 5) / 2),
+      v.set(Math.sin(t / 5), 0, 7 + Math.cos(t / 5) / 2),
       0.02,
     );
     state.camera.lookAt(0, 0, 0);

@@ -1,5 +1,4 @@
 import Landing from "@/components/Landing";
-import Image from "next/image";
 import { ChevronDown, LinkIcon, Mail } from "lucide-react";
 import Link from "next/link";
 import ContentThumbnail from "@/components/ContentThumbnail";
@@ -7,6 +6,8 @@ import AboutMe from "@/components/AboutMe";
 import Skill from "@/components/Skill";
 import YouTubeVideo from "@/components/YouTubeVideo";
 import { Button } from "@/components/ui/button";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+import Pfp from "@/components/Pfp";
 
 export default function Page() {
   return (
@@ -21,13 +22,9 @@ export default function Page() {
         <div className="mx-3 flex h-[20%] max-w-[500px] flex-col items-center justify-around">
           <div>
             <div className="flex flex-row items-center justify-center gap-4 font-light">
-              <Image
-                className="m-0 rounded-full p-0"
-                src="/profile_picture_human.png"
-                alt="Profile picture"
-                width={70}
-                height={70}
-              />
+              <div className="max-h-[70px] min-w-[70px]">
+                <Pfp />
+              </div>
               <p className="m-0 p-0 text-center">
                 full-stack web dev specializing in backend development, content
                 creator, sometimes a low level programmer
@@ -243,6 +240,9 @@ export default function Page() {
         </p>
         <YouTubeVideo id="ZqvR1H9QSNg" />
         <p className="mt-16">thanks for reading!</p>
+        <Link href={"#contact-me"} className="h-10">
+          <ChevronDown />
+        </Link>
       </section>
       <section
         id="contact-me"
@@ -260,6 +260,7 @@ export default function Page() {
               <Mail />
             </a>
           </div>
+          <ScrollToTopButton />
         </div>
         <p className="mb-4 text-xs">
           This site was built with NextJS, Shadcn, React, and love
