@@ -1,13 +1,17 @@
 import Landing from "@/components/Landing";
 import { ChevronDown, LinkIcon, Mail } from "lucide-react";
 import Link from "next/link";
-import ContentThumbnail from "@/components/ContentThumbnail";
 import AboutMe from "@/components/AboutMe";
 import Skill from "@/components/Skill";
 import YouTubeVideo from "@/components/YouTubeVideo";
 import { Button } from "@/components/ui/button";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Pfp from "@/components/Pfp";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Content from "@/components/Content";
+import Personal from "@/components/Personal";
+import ContactMe from "@/components/ContactMe";
 
 export default function Page() {
   return (
@@ -36,235 +40,26 @@ export default function Page() {
           </Link>
         </div>
       </section>
-      <AboutMe />
+      <section
+        id="about-me"
+        className="mx-auto min-h-[90vh] max-w-[500px] pt-8 [&_p]:font-light"
+      >
+        <AboutMe />
+      </section>
       <section id="projects" className="mb-8">
-        <h2 className="mx-auto mb-8 text-center">projects</h2>
-        <div className="mx-auto flex max-w-[80%] flex-row flex-wrap items-start justify-center gap-8 gap-y-8">
-          <ContentThumbnail
-            imgSrc="/tortillasthumbnail.png"
-            href="https://github.com/artrixdotdev/tortillas"
-            id="tortillas-project"
-          >
-            <h3>tortillas</h3>
-            <p>
-              A completely asynchronous (tokio-based) torrenting library/TUI
-              written in Rust. Uses Serde for magnet URI/torrent file parsing,
-              and a few other small libraries to help manage uTP/UDP/TCP/HTTP
-              requests.
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            imgSrc="/byeaithumbnail.png"
-            href="https://byeai.dev"
-            id="byeai-project"
-          >
-            <h3>byeAI</h3>
-            <p>
-              Because blogs shouldn&apos;t be written by robots. Uses RDI (see
-              next), running on a self-managed VPS. Custom notification system,
-              facilities for moderation, and multiple levels of auth.
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            imgSrc="/rdithumbnail.png"
-            href="https://github.com/kurealnum/react-django-implementation"
-          >
-            <h3>rdi (react-django-implementation)</h3>
-            <p>
-              A fully dockerized Django & {"React"} implementation, built from
-              the ground up. SPA w/ TanStack, React Router and more. Backend
-              handled by Django, Nginx, and Docker.{" "}
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            href="https://nonprofitlink.org"
-            imgSrc="/nplthumbnail.png"
-          >
-            <h3>non-profit-link</h3>
-            <p>
-              A web application built with Django and HTMX, built to enable
-              non-profits to better collaborate and communicate. My first{" "}
-              <i>truly</i> collaborative OSS project.
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            imgSrc="/todoistterminalthumbnail.png"
-            href="https://github.com/kurealnum/todoist-terminal"
-          >
-            <h3>todoist-terminal</h3>
-            <p>
-              A TUI for Todoist, built entirely in C and Ncurses. Uses libcurl
-              to manage requests to REST APIs. Also uses libuuid, cJSON, and a
-              few other libraries. Compiles with gcc.
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            imgSrc="/dotfilesthumbnail.png"
-            href="https://github.com/kurealnum/dotfiles/tree/main"
-          >
-            <h3>dotfiles</h3>
-            <p>
-              Non-traditional never-ending project. Runs with i3 (X11), picom,
-              dunst, feh, nnn, and a dozen other tools. Also includes a small
-              bash system maintenance script.
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            imgSrc="/nvimthumbnail.png"
-            href="https://github.com/kurealnum/nvimconfig"
-          >
-            <h3>nvimrc</h3>
-            <p>
-              Built-from-scratch Neovim config used for general purpose software
-              development, notetaking, journaling, and more. Supports LaTeX and
-              images.
-            </p>
-          </ContentThumbnail>
-          <ContentThumbnail
-            imgSrc="/contentthumbnail.png"
-            href="https://www.youtube.com/@Oscar_C"
-          >
-            <h3>content creation: the forever project</h3>
-            <p>
-              Making tech videos, from Arch Linux to BitTorrent to C. I&apos;ve
-              learned a lot about marketing, SEO, the intricacies of Davinci
-              Resolve, OBS, and ironically, FFmpeg.
-            </p>
-          </ContentThumbnail>
-        </div>
+        <Projects />
       </section>
-      <section
-        id="skills"
-        className="mx-auto mt-16 flex min-h-screen w-[80%] flex-col items-center"
-      >
-        <h2 className="mt-4 text-3xl">skillz</h2>
-        <p className="text-center font-light">
-          or all the noteworthy things that I know how to use
-        </p>
-        <h3 className="mt-8">web dev stack</h3>
-        <div className="flex max-w-[440px] flex-row flex-wrap justify-center gap-2">
-          <Skill src="javascript-original.svg" />
-          <Skill src="typescript.svg" />
-          <Skill src="python-original.svg" />
-          <Skill src="css3-original.svg" />
-          <Skill src="html5-original.svg" />
-          <Skill src="react-original.svg" />
-          <Skill
-            src="reactrouter.svg"
-            className="rounded-md bg-neutral-300 p-1"
-          />
-          <Skill src="tailwindcss-original.svg" />
-          <Skill src="django-plain.svg" />
-          <Skill src="nginx.svg" />
-          <Skill
-            src="djangorest-original.svg"
-            className="rounded-md bg-neutral-300"
-          />
-          <Skill src="docker-plain.svg" />
-        </div>
-        <h3 className="mt-8">general tools</h3>
-        <div className="flex max-w-[300px] flex-row flex-wrap justify-center gap-2">
-          <Skill src="c-original.svg" />
-          <Skill src="java-original.svg" />
-          <Skill src="rust.svg" />
-          <Skill src="git-original.svg" />
-          <Skill src="sqlite-original.svg" />
-          <Skill src="postgresql-plain.svg" />
-          <Skill src="linux.svg" />
-          <Skill src="latex.svg" />
-        </div>
-        <h3 className="mt-8">misc. tech</h3>
-        <div className="flex flex-row flex-wrap justify-center gap-2">
-          <Skill src="neovim-original.svg" />
-          <Skill src="archlinux-original.svg" />
-          <Skill src="arduino.svg" />
-          <Skill src="davinci.svg" />
-          <Skill src="figma.svg" />
-        </div>
+      <section id="skills" className="mx-auto mt-16 min-h-screen w-[80%]">
+        <Skills />
       </section>
-      <section
-        id="content"
-        className="mx-auto flex min-h-[80vh] w-[90%] flex-col items-center"
-      >
-        <h2 className="text-2xl">content creation</h2>
-        <p className="max-w-[500px] p-4 font-light">
-          As I mentioned in the projects section, I run and manage a YouTube
-          channel. I also create similar content in the form of blogs on{" "}
-          <Button variant={"link"} asChild size={"link"}>
-            <a href="https://dev.to/kurealnum">Dev.to</a>
-          </Button>{" "}
-          (although I may consider posting a few of them on this site).
-        </p>
-        <YouTubeVideo id="o03_cfOnl84" />
-        <h3 className="mt-4 text-lg">by the way...</h3>
-        <p className="max-w-[500px] p-4 font-light">
-          I&apos;ve been featured in Dev.to&apos;s &quot;Top 7 Posts of the
-          week&quot; 3 times, and I&apos;m also an active community moderator.
-        </p>
+      <section id="content" className="mx-auto min-h-[80vh] w-[90%]">
+        <Content />
       </section>
-      <section id="me" className="mx-auto flex w-[90%] flex-col items-center">
-        <h2>me</h2>
-        <h3 className="mt-4">mountainbiking</h3>
-        <p>
-          I&apos;ve been mountain biking since I was 4 years old, and racing
-          since I was 6. Since then, I&apos;ve participated in multiple
-          interscholastic teams, even helping to start one locally when I was
-          14. My final highschool level race(s) will be occuring this May{" "}
-          {"& April"}, although I intend to continue to race well after
-          highschool is over.
-        </p>
-        <h3 className="mt-4">teaching</h3>
-        <p>
-          Teaching is a strong passion of mine. As I age out of the mountain
-          biking team I helped start, I plan to act as a coach for the next
-          generation of youth riders. Additionally, I&apos;ve spent a great deal
-          of time tutoring and learning how to optimally teach. I spent a few
-          hours a week every day of my senior high school year working with
-          students in Algebra I, Algebra II, Trigonometry, and more. I&apos;ve
-          also privately tutored students online, creating lesson plans and
-          curating practice problems.
-        </p>
-        <h3 className="mt-4">sim racing</h3>
-        <p className="mb-4">
-          I <i>really</i> like cars. Consequently, I spend a lot of my free time
-          racing/driving virtually. I own a{" "}
-          <Button variant={"link"} asChild size={"link"}>
-            <Link href="https://www.logitechg.com/en-us/products/driving/g923-trueforce-sim-racing-wheel.html">
-              G923
-            </Link>
-          </Button>{" "}
-          racing wheel (nothing fancy, but I&apos;m not complaining!) and play
-          Assetto Corsa, BeamNG Drive, Dirt Rally 2.0, and more! Here&apos;s a
-          short clip of me &quot;rallying&quot; a Porsche 911 Weissach on an
-          Assetto Corsa touge map.
-        </p>
-        <YouTubeVideo id="ZqvR1H9QSNg" />
-        <p className="mt-16">thanks for reading!</p>
-        <Link href={"#contact-me"} className="h-10">
-          <ChevronDown />
-        </Link>
+      <section id="me" className="mx-auto w-[90%]">
+        <Personal />
       </section>
-      <section
-        id="contact-me"
-        className="flex min-h-screen flex-col items-center justify-between"
-      >
-        <div></div>
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-3xl">contact me</h1>
-          <p className="font-light">Feel free to reach out!</p>
-          <div className="mt-2 flex flex-row gap-4">
-            <a href="https://linktr.ee/kureal">
-              <LinkIcon />
-            </a>
-            <a href="mailto:oscar.gaske.cs@gmail.com">
-              <Mail />
-            </a>
-          </div>
-          <ScrollToTopButton />
-        </div>
-        <p className="mb-4 text-xs">
-          This site was built with NextJS, Shadcn, React, and love
-        </p>
+      <section id="contact-me" className="min-h-screen">
+        <ContactMe />
       </section>
     </div>
   );

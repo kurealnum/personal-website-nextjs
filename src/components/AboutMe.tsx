@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import { useState } from "react";
 import Tab from "./Tab";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
   const [api, setApi] = useState<CarouselApi>();
@@ -23,9 +24,15 @@ export default function AboutMe() {
   };
 
   return (
-    <section
-      id="about-me"
-      className="mx-auto min-h-[90vh] max-w-[500px] pt-8 [&_p]:font-light"
+    <motion.div
+      initial={{ opacity: 0, transform: "translateY(100px)" }}
+      whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+      transition={{
+        duration: 1.3,
+        ease: "easeInOut",
+        type: "spring",
+        bounce: 0.1,
+      }}
     >
       <div className="mb-4 flex flex-row justify-center gap-4">
         <Button variant={"outline"} onClick={() => scrollToHelper(0)}>
@@ -108,6 +115,6 @@ export default function AboutMe() {
           </CarouselItem>
         </CarouselContent>
       </Carousel>
-    </section>
+    </motion.div>
   );
 }
