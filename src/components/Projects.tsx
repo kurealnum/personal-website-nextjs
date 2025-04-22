@@ -88,7 +88,7 @@ export default function Projects() {
           </p>
         </ContentThumbnail>
         <ContentThumbnail
-          imgSrc="/contentthumbnail.png"
+          imgSrc="/davinci.png"
           href="https://www.youtube.com/@Oscar_C"
         >
           <h3>content creation: the forever project</h3>

@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Separator } from "./ui/separator";
 import Image from "next/image";
-import { Mail } from "lucide-react";
 
 export default function CustomNavBar() {
   return (
@@ -21,7 +20,10 @@ export default function CustomNavBar() {
           <NavigationMenuTrigger className="text-xl">
             whoami
           </NavigationMenuTrigger>
-          <NavigationMenuContent aria-label="Static Actions">
+          <NavigationMenuContent
+            aria-label="Static Actions"
+            className="bg-popover"
+          >
             <ul className="w-[150px]">
               <NavigationMenuLink href="#about-me">
                 what I do

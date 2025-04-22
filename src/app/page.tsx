@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Content from "@/components/Content";
 import Personal from "@/components/Personal";
 import ContactMe from "@/components/ContactMe";
+import ScrollToIdButton from "@/components/ScrollToIdButton";
 
 export default function Page() {
   return (
@@ -28,9 +29,9 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <Link href={"#about-me"} className="h-10">
+          <ScrollToIdButton id="#about-me">
             <ChevronDown />
-          </Link>
+          </ScrollToIdButton>
         </div>
       </section>
       <section

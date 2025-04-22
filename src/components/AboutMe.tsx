@@ -45,7 +45,7 @@ export default function AboutMe() {
           what I&apos;ve done
         </Button>
       </div>
-      <Carousel setApi={setApi} opts={{ duration: 22 }}>
+      <Carousel setApi={setApi} opts={{ duration: 22, watchDrag: false }}>
         <CarouselContent>
           <CarouselItem>
             <Tab>
@@ -111,7 +111,9 @@ export default function AboutMe() {
                 There&apos;s a lot that I didn&apos;t mention! If you&apos;d
                 like to know more, check out my{" "}
                 <Button variant={"link"} asChild size={"link"}>
-                  <Link href="/brag-doc">brag doc.</Link>
+                  <Link href="/brag-doc" className="decoration-accent">
+                    brag doc.
+                  </Link>
                 </Button>
               </p>
             </Tab>

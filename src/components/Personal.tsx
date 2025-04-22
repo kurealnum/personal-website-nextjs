@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import YouTubeVideo from "./YouTubeVideo";
 import Link from "next/link";
 import LoadIn from "./LoadIn";
+import ScrollToIdButton from "./ScrollToIdButton";
 
 export default function Personal() {
   return (
@@ -45,9 +46,9 @@ export default function Personal() {
       </p>
       <YouTubeVideo id="ZqvR1H9QSNg" />
       <p className="mt-16">thanks for reading!</p>
-      <Link href={"#contact-me"} className="h-10">
+      <ScrollToIdButton id="#contact-me">
         <ChevronDown />
-      </Link>
+      </ScrollToIdButton>
     </LoadIn>
   );
 }
