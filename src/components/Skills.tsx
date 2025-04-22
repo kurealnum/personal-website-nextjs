@@ -14,14 +14,14 @@ export default function Skills() {
       <div className="flex max-w-[440px] flex-row flex-wrap justify-center gap-2">
         <Skill src="javascript-original.svg" />
         <Skill src="typescript.svg" />
-        <Skill src="python-original.svg" />
         <Skill src="css3-original.svg" />
         <Skill src="html5-original.svg" />
-        <Skill src="react-original.svg" />
         <Skill
           src="reactrouter.svg"
           className="rounded-md bg-neutral-300 p-1"
         />
+        <Skill src="python-original.svg" />
+        <Skill src="react-original.svg" />
         <Skill src="tailwindcss-original.svg" />
         <Skill src="django-plain.svg" />
         <Skill src="nginx.svg" />
@@ -40,7 +40,7 @@ export default function Skills() {
         <Skill src="sqlite-original.svg" />
         <Skill src="postgresql-plain.svg" />
         <Skill src="linux.svg" />
-        <Skill src="latex.svg" />
+        <Skill src="latex.svg" className="rounded-md bg-neutral-300 p-1" />
       </div>
       <h3 className="mt-8">misc. tech</h3>
       <div className="flex flex-row flex-wrap justify-center gap-2">

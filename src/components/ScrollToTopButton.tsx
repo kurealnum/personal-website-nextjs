@@ -6,10 +6,11 @@ export default function ScrollToTopButton() {
   return (
     <Button
       className="mt-4"
-      variant={"outline"}
+      variant={"link"}
       onClick={() => window.scrollTo(0, 0)}
+      asChild
     >
-      {"<C-Home> / gg"}
+      <p className="cursor-pointer text-white">{"<C-Home> / gg"}</p>
     </Button>
   );
 }

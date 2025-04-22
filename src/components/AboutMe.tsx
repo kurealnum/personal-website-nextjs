@@ -14,6 +14,7 @@ import LoadIn from "./LoadIn";
 
 export default function AboutMe() {
   const [api, setApi] = useState<CarouselApi>();
+  const [selected, setSelected] = useState(0);
 
   const scrollToHelper = (index: number) => {
     if (!api) {
@@ -21,19 +22,30 @@ export default function AboutMe() {
       return;
     }
     api.scrollTo(index);
+    setSelected(index);
   };
+
+  const shadow = "shadow-[0px_2px_3px_3px_var(--primary)]";
 
   return (
     <LoadIn>
       <div className="mb-4 flex flex-row justify-center gap-4">
-        <Button variant={"outline"} onClick={() => scrollToHelper(0)}>
+        <Button
+          className={selected == 0 ? shadow : ""}
+          variant={"outline"}
+          onClick={() => scrollToHelper(0)}
+        >
           what I&apos;m doing
         </Button>
-        <Button variant={"outline"} onClick={() => scrollToHelper(1)}>
+        <Button
+          className={selected == 1 ? shadow : ""}
+          variant={"outline"}
+          onClick={() => scrollToHelper(1)}
+        >
           what I&apos;ve done
         </Button>
       </div>
-      <Carousel setApi={setApi}>
+      <Carousel setApi={setApi} opts={{ duration: 22 }}>
         <CarouselContent>
           <CarouselItem>
             <Tab>

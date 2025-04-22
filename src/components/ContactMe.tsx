@@ -2,11 +2,10 @@
 
 import { LinkIcon, Mail } from "lucide-react";
 import ScrollToTopButton from "./ScrollToTopButton";
-import LoadIn from "./LoadIn";
 
 export default function ContactMe() {
   return (
-    <LoadIn className="flex min-h-screen flex-col items-center justify-between">
+    <div className="flex min-h-screen flex-col items-center justify-between">
       <div></div>
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-3xl">contact me</h1>
@@ -21,9 +20,10 @@ export default function ContactMe() {
         </div>
         <ScrollToTopButton />
       </div>
-      <p className="mb-4 text-xs">
-        This site was built with NextJS, Shadcn, React, and love
+      <p className="mb-4 text-center text-xs">
+        This site was built with NextJS, Shadcn, React, and others, specifically{" "}
+        <i>without</i> AI.
       </p>
-    </LoadIn>
+    </div>
   );
 }

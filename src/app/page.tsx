@@ -1,11 +1,6 @@
-import Landing from "@/components/Landing";
-import { ChevronDown, LinkIcon, Mail } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import AboutMe from "@/components/AboutMe";
-import Skill from "@/components/Skill";
-import YouTubeVideo from "@/components/YouTubeVideo";
-import { Button } from "@/components/ui/button";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Pfp from "@/components/Pfp";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
@@ -20,18 +15,16 @@ export default function Page() {
         className="flex h-[calc(100vh-48px)] flex-col items-center justify-center max-[1000px]:flex-wrap"
         id="home"
       >
-        <div className="h-[80%] w-screen">
-          <Landing />
-        </div>
-        <div className="mx-3 flex h-[20%] max-w-[500px] flex-col items-center justify-around">
+        <div className="mx-3 flex h-[20%] max-w-[530px] flex-col items-center justify-around">
+          <h1 className="mx-auto text-3xl">hi, I&apos;m Oscar</h1>
           <div>
             <div className="flex flex-row items-center justify-center gap-4 font-light">
               <div className="max-h-[70px] min-w-[70px]">
                 <Pfp />
               </div>
               <p className="m-0 p-0 text-center">
-                full-stack web dev specializing in backend development, content
-                creator, sometimes a low level programmer
+                full-stack web developer specializing in backend development,
+                content creator, low level programmer. nvim {"& arch user"}
               </p>
             </div>
           </div>
@@ -42,14 +35,14 @@ export default function Page() {
       </section>
       <section
         id="about-me"
-        className="mx-auto min-h-[90vh] max-w-[500px] pt-8 [&_p]:font-light"
+        className="mx-auto min-h-[70vh] max-w-[500px] pt-8 [&_p]:font-light"
       >
         <AboutMe />
       </section>
-      <section id="projects" className="mb-8">
+      <section id="projects" className="mb-4 pb-8">
         <Projects />
       </section>
-      <section id="skills" className="mx-auto mt-16 min-h-screen w-[80%]">
+      <section id="skills" className="mx-auto mt-32 min-h-screen w-[80%]">
         <Skills />
       </section>
       <section id="content" className="mx-auto min-h-[80vh] w-[90%]">
