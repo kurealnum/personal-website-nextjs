@@ -6,6 +6,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { Separator } from "./ui/separator";
+import Image from "next/image";
+import { Mail } from "lucide-react";
 
 export default function CustomNavBar() {
   return (
@@ -26,6 +29,24 @@ export default function CustomNavBar() {
               <NavigationMenuLink href="#projects">projects</NavigationMenuLink>
               <NavigationMenuLink href="#skills">skillz</NavigationMenuLink>
               <NavigationMenuLink href="#me">me</NavigationMenuLink>
+              <Separator className="my-2" />
+              <ul className="flex flex-row items-center justify-between">
+                <NavigationMenuLink href="https://www.youtube.com/@Oscar_CS">
+                  <Icon src="/youtube.svg" />
+                </NavigationMenuLink>
+                <NavigationMenuLink href="https://github.com/kurealnum">
+                  <Icon src="/github.svg" />
+                </NavigationMenuLink>
+                <NavigationMenuLink href="https://dev.to/kurealnum">
+                  <Icon src="/dev.svg" />
+                </NavigationMenuLink>
+                <NavigationMenuLink href="mailto:oscar.gaske.cs@gmail.com">
+                  <Icon src="/mail.svg" />
+                </NavigationMenuLink>
+                <NavigationMenuLink href="https://bsky.app/profile/kureal.bsky.social">
+                  <Icon src="/bluesky.svg" />
+                </NavigationMenuLink>
+              </ul>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -41,4 +62,8 @@ export default function CustomNavBar() {
       </NavigationMenuList>
     </NavigationMenu>
   );
+}
+
+function Icon({ src }: { src: string }) {
+  return <Image width={24} height={24} src={src} alt="" />;
 }
