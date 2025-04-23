@@ -10,7 +10,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Oscar's Website",
-  description: "Personal website of Oscar Gaske",
+  description: "Personal website of Oscar Gaske (Oscar CS)",
+  keywords: ["oscargaske", "oscarcs", "oscarg", "gaske", "oscar", "oscarcs"],
 };
 
 export default function RootLayout({

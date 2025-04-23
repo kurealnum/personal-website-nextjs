@@ -20,6 +20,7 @@ export default function LoadIn({
         type: "spring",
         bounce: 0.1,
       }}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>
