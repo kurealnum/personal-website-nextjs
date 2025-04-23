@@ -25,12 +25,14 @@ export default function CustomNavBar() {
             className="bg-popover"
           >
             <ul className="w-[150px]">
-              <NavigationMenuLink href="#about-me">
+              <NavigationMenuLink href="/#about-me">
                 what I do
               </NavigationMenuLink>
-              <NavigationMenuLink href="#projects">projects</NavigationMenuLink>
-              <NavigationMenuLink href="#skills">skillz</NavigationMenuLink>
-              <NavigationMenuLink href="#me">me</NavigationMenuLink>
+              <NavigationMenuLink href="/#projects">
+                projects
+              </NavigationMenuLink>
+              <NavigationMenuLink href="/#skills">skillz</NavigationMenuLink>
+              <NavigationMenuLink href="/#me">me</NavigationMenuLink>
               <Separator className="my-2" />
               <ul className="flex flex-row items-center justify-between">
                 <NavigationMenuLink href="https://www.youtube.com/@Oscar_CS">
@@ -53,13 +55,17 @@ export default function CustomNavBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink href="#contact-me">contact me</NavigationMenuLink>
+          <NavigationMenuLink href="/#contact-me">
+            contact me
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink href="#resume">resume</NavigationMenuLink>
+          <NavigationMenuLink href="https://docs.google.com/document/d/104CdIhV0xpPLE5--gmSbonsOXHvxtyxsc5pmr79R42k/edit?tab=t.0#heading=h.sr3e2nlhgu9x">
+            resume
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink href="#brag-doc">brag doc</NavigationMenuLink>
+          <NavigationMenuLink href="/brag-doc">brag doc</NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

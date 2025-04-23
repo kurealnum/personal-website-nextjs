@@ -1,5 +1,4 @@
 import { ChevronDown } from "lucide-react";
-import Link from "next/link";
 import AboutMe from "@/components/AboutMe";
 import Pfp from "@/components/Pfp";
 import Projects from "@/components/Projects";
