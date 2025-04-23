@@ -1,11 +1,12 @@
 "use client";
 
 import { Button } from "./ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Loader } from "lucide-react";
 import YouTubeVideo from "./YouTubeVideo";
 import Link from "next/link";
 import LoadIn from "./LoadIn";
 import ScrollToIdButton from "./ScrollToIdButton";
+import { Suspense } from "react";
 
 export default function Personal() {
   return (
@@ -44,7 +45,9 @@ export default function Personal() {
         short clip of me &quot;rallying&quot; a Porsche 911 Weissach on an
         Assetto Corsa touge map (look at that beautiful slide @ 0:20).
       </p>
-      <YouTubeVideo id="ZqvR1H9QSNg" />
+      <Suspense fallback={<Loader />}>
+        <YouTubeVideo id="ZqvR1H9QSNg" />
+      </Suspense>
       <p className="mt-16">thanks for reading!</p>
       <ScrollToIdButton id="#contact-me">
         <ChevronDown />

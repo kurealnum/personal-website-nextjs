@@ -3,6 +3,8 @@
 import { Button } from "./ui/button";
 import YouTubeVideo from "./YouTubeVideo";
 import LoadIn from "./LoadIn";
+import { Suspense } from "react";
+import { Loader } from "lucide-react";
 
 export default function Content() {
   return (
@@ -16,7 +18,9 @@ export default function Content() {
         </Button>{" "}
         (although I may consider posting a few of them on this site).
       </p>
-      <YouTubeVideo id="o03_cfOnl84" />
+      <Suspense fallback={<Loader />}>
+        <YouTubeVideo id="o03_cfOnl84" />
+      </Suspense>
       <h3 className="mt-4 text-lg">by the way...</h3>
       <p className="max-w-[500px] p-4 font-light">
         I&apos;ve been featured in Dev.to&apos;s &quot;Top 7 Posts of the
