@@ -15,9 +15,8 @@ export default function Projects() {
           <h3>tortillas</h3>
           <p>
             A completely asynchronous (tokio-based) torrenting library/TUI
-            written in Rust. Uses Serde for magnet URI/torrent file parsing, and
-            a few other small libraries to help manage uTP/UDP/TCP/HTTP
-            requests.
+            written in Rust. Capable of magnet URI/torrent file parsing and
+            torrenting/tracking through uTP/UDP/TCP/HTTP.
           </p>
         </ContentThumbnail>
         <ContentThumbnail

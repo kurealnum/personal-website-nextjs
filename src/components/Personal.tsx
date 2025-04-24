@@ -1,12 +1,11 @@
 "use client";
 
-import { Button } from "./ui/button";
 import { ChevronDown, Loader } from "lucide-react";
 import YouTubeVideo from "./YouTubeVideo";
-import Link from "next/link";
 import LoadIn from "./LoadIn";
 import ScrollToIdButton from "./ScrollToIdButton";
 import { Suspense } from "react";
+import ButtonLink from "./ButtonLink";
 
 export default function Personal() {
   return (
@@ -35,11 +34,9 @@ export default function Personal() {
       <p className="mb-4">
         I <i>really</i> like cars. Consequently, I spend a lot of my free time
         racing/driving virtually. I own a{" "}
-        <Button variant={"link"} asChild size={"link"}>
-          <Link href="https://www.logitechg.com/en-us/products/driving/g923-trueforce-sim-racing-wheel.html">
-            G923
-          </Link>
-        </Button>{" "}
+        <ButtonLink href="https://www.logitechg.com/en-us/products/driving/g923-trueforce-sim-racing-wheel.html">
+          G923
+        </ButtonLink>{" "}
         racing wheel (nothing fancy, but I&apos;m not complaining!) and play
         Assetto Corsa, BeamNG Drive, Dirt Rally 2.0, and more! Here&apos;s a
         short clip of me &quot;rallying&quot; a Porsche 911 Weissach on an

@@ -127,10 +127,10 @@ export default function Page() {
             <Link href={"#grades"}>Academics</Link>
           </li>
           <li>
-            <Link href={"#cs50"}>CS50</Link>
+            <Link href={"#cs50-cert"}>CS50</Link>
           </li>
           <li>
-            <Link href={"#stanford"}>
+            <Link href={"#stanford-cert"}>
               Stanford Algorithms: Design and Analysis, Part 1
             </Link>
           </li>
@@ -174,8 +174,8 @@ export default function Page() {
           <h3 id="leetcode">LeetCode (2023 - Present)</h3>
           <p>
             After I finished my Stanford course on algorithms (see{" "}
-            <Link href={"#misc"}>Miscellaneous achievements</Link>), I had
-            enough confidence to start working away at LeetCode problems –
+            <ButtonLink href="#misc">miscellaneous achievements</ButtonLink>), I
+            had enough confidence to start working away at LeetCode problems –
             which, if you’re unfamiliar, are algorithm based problems in an
             interview format). LeetCode problems tend to be extremely difficult
             because it’s extremely hard to find help, and when you don’t
@@ -491,7 +491,7 @@ export default function Page() {
         <ul className="mx-2 flex flex-col items-center gap-8 [&_h3]:font-normal">
           <div>
             <h3 id="top-7">Featured in Dev.to’s “Top 7 Posts”</h3>
-            <p>
+            <p className="mb-2">
               I wrote a blog post about how I take notes with Neovim, which was
               featured in Dev.to’s “Top 7 Featured DEV posts of the week”. For
               context, Dev.to is a platform with 2 million software developers
@@ -503,7 +503,7 @@ export default function Page() {
               thousand of those people decided to click on it). I also gained
               about 200 subscribers on YouTube from this video.
             </p>
-            <p>
+            <p className="mb-2">
               I also had yet another post featured on March 11th, 2025. This
               post was about Arch Linux and productivity. I also produced a
               video on this topic (that took about a month to make, and that
@@ -522,10 +522,10 @@ export default function Page() {
           </div>
           <div>
             <h3 id="grades">Academics</h3>
-            <p>
+            <p className="mb-2">
               I had a top 3 grade in Pre-Calculus class (97.44%), and while the
               first two years of highschool were rocky, I maintained a 4.0 GPA
-              throughout the las two years.
+              throughout the last two years.
             </p>
             <p>
               A few other notable academic achievements: I scored a 5 on the AP
@@ -534,7 +534,7 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 id="cs50">CS50</h3>
+            <h3 id="cs50-cert">CS50</h3>
             <p>
               Completed Harvard&apos;s CS50 (introductory college level computer
               science course) in my sophmore year of highschool.
@@ -548,12 +548,12 @@ export default function Page() {
             />
           </div>
           <div>
-            <h3 id="stanford">
+            <h3 id="stanford-cert">
               Stanford Algorithms: Design and Analysis, Part 1
             </h3>
             <p>
               Completed Standford&apos;s course on Algorithms during the summer
-              of my sophmore-junior year of highschool.
+              of my sophmore/junior year of highschool.
             </p>
             <Image
               className="mx-auto my-4 mb-8"

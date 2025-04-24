@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "./ui/button";
 import YouTubeVideo from "./YouTubeVideo";
 import LoadIn from "./LoadIn";
 import { Suspense } from "react";
 import { Loader } from "lucide-react";
+import ButtonLink from "./ButtonLink";
 
 export default function Content() {
   return (
@@ -13,9 +13,7 @@ export default function Content() {
       <p className="max-w-[500px] p-4 font-light">
         As I mentioned in the projects section, I run and manage a YouTube
         channel. I also create similar content in the form of blogs on{" "}
-        <Button variant={"link"} asChild size={"link"}>
-          <a href="https://dev.to/kurealnum">Dev.to</a>
-        </Button>{" "}
+        <ButtonLink href="https://dev.to/kurealnum">Dev.to</ButtonLink>{" "}
         (although I may consider posting a few of them on this site).
       </p>
       <Suspense fallback={<Loader />}>

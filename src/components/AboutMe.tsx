@@ -9,8 +9,8 @@ import { type CarouselApi } from "@/components/ui/carousel";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import Tab from "./Tab";
-import Link from "next/link";
 import LoadIn from "./LoadIn";
+import ButtonLink from "./ButtonLink";
 
 export default function AboutMe() {
   const [api, setApi] = useState<CarouselApi>();
@@ -59,19 +59,14 @@ export default function AboutMe() {
                 Outside of that, I&apos;m working on Tortillas , a library/TUI
                 for asynchronous torrenting, made entirely in Rust. If
                 you&apos;re curious, you can take a look at it{" "}
-                <Button variant={"link"} asChild size={"link"}>
-                  <a href="#tortillas-project">here</a>
-                </Button>
-                .
+                <ButtonLink href="#tortillas-project">here</ButtonLink>.
               </p>
               <p>
                 My second most recent (major) project is byeAI, a developer
                 content creation site that completely disallows AI generated or
-                assisted content. It&apos;s built from scratch(-ish!) with
-                React, Django, Nginx, and Docker.{" "}
-                <Button variant={"link"} asChild size={"link"}>
-                  <a href="#byeai-project">Check it out!</a>
-                </Button>
+                assisted content. It&apos;s built from scratch with React,
+                Django, Nginx, and Docker.{" "}
+                <ButtonLink href="#byeai-project">Check it out!</ButtonLink>
               </p>
             </Tab>
           </CarouselItem>
@@ -79,10 +74,7 @@ export default function AboutMe() {
             <Tab>
               <p className="text-center text-sm">
                 Hey! If you want to know more about me <i>personally</i>, check{" "}
-                <Button variant={"link"} asChild size={"link"}>
-                  <a href="#me">this</a>
-                </Button>{" "}
-                out!
+                <ButtonLink href="#me">this</ButtonLink> out!
               </p>
               <p>
                 When I was 15, I decided to start focusing more on my education
@@ -101,20 +93,17 @@ export default function AboutMe() {
                 generated content.
               </p>
               <p>
-                During all of this, I spent a great deal of time volunteering at
-                my local food pantry, as well as tutoring at my local highschool
-                once a week in Algebra I, Algebra II, Trigonometry, and more.
-                I&apos;ve also privately tutored students online, creating
-                lesson plans and curating practice problems.
+                In between all of this, I spent a good deal of time studying
+                algorithms and practicing LeetCode. I plan to keep practicing
+                LeetCode this summer (2025), and use these skills to start a
+                competitive programming club in college. In terms of academics,
+                I&apos;ve taken 4 IT classes (all CompTIA based) as well as 4 AP
+                classes, only in the last two years of highschool.
               </p>
               <p>
                 There&apos;s a lot that I didn&apos;t mention! If you&apos;d
                 like to know more, check out my{" "}
-                <Button variant={"link"} asChild size={"link"}>
-                  <Link href="/brag-doc" className="decoration-accent">
-                    brag doc.
-                  </Link>
-                </Button>
+                <ButtonLink href="/brag-doc">brag doc.</ButtonLink>
               </p>
             </Tab>
           </CarouselItem>
