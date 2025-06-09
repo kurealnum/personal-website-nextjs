@@ -22,7 +22,7 @@ export default function Page() {
               <div className="max-h-[70px] min-w-[70px]">
                 <Pfp />
               </div>
-              <p className="m-0 p-0 text-center">
+              <p className="m-0 p-0 text-center text-sm md:text-base">
                 full-stack web developer specializing in backend development,
                 content creator, low level programmer. nvim {"& arch user"}
               </p>

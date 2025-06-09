@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function LoadIn({
   children,
@@ -9,6 +10,21 @@ export default function LoadIn({
   children: React.ReactNode;
   className?: string;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (!window) {
+      return;
+    }
+
+    if (window.innerWidth < 768) {
+      // Width of surrounding paragraphs minus padding.
+      setIsMobile(true);
+    }
+  }, []);
+
+  if (isMobile) {
+    return <div className={className}>{children}</div>;
+  }
   return (
     <motion.div
       className={className}
