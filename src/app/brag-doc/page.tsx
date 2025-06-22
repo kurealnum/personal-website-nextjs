@@ -147,10 +147,10 @@ export default function Page() {
             grade when I turned my attention to assisting in developing a new
             team in my local area. I still ride on a weekly basis, working on
             skills and fitness, and I continue to race in unique events when my
-            schedule is free. My last race was the Paranormal 6 hour, starting
-            at 16:00 and ending at 22:30) where my team tied for second, and my
-            second to last race was the PocaGo enduro outside of Richmond, VA
-            where I placed 4th.
+            schedule is free. My last race was the PocaGo enduro in Pocahontas
+            State Park where I placed 11th in the most challenging category. My
+            second to last race was the Paranormal 6 hour, starting at 16:00 and
+            ending at 22:30) where my team tied for second.
           </p>
         </div>
 
@@ -358,9 +358,8 @@ export default function Page() {
             watch time and 250 subscribers. The second video (which again took
             about 3 weeks to produce) amassed me almost 60 thousand views in 3
             days, as well as 3 thousand hours of watch time and 1 thousand
-            subscribers. With that, I was eligible to start monetizing my videos
-            and profiting off of them. I intend to keep pursuing Youtube as a
-            potential temporary source of income.
+            subscribers. Since then, I have monetized my channel and I upload on
+            a semi-consistent basis (about once every month).
           </p>
         </div>
       </ul>

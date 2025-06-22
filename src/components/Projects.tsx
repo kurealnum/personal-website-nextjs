@@ -97,6 +97,17 @@ export default function Projects() {
             Resolve, OBS, and ironically, FFmpeg.
           </p>
         </ContentThumbnail>
+        <ContentThumbnail
+          imgSrc="/fredcomphomepage.png"
+          href="https://www.fredericksburgmtb.org"
+        >
+          <h3>fred comp homepage</h3>
+          <p>
+            A simple but effective website for the Fredericksburg Composite
+            Mountain Biking team. Designed with Figma, developed with NextJS,
+            Tailwind, and Framer Motion.
+          </p>
+        </ContentThumbnail>
       </div>
     </LoadIn>
   );

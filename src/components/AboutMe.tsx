@@ -96,9 +96,10 @@ export default function AboutMe() {
                 In between all of this, I spent a good deal of time studying
                 algorithms and practicing LeetCode. I plan to keep practicing
                 LeetCode this summer (2025), and use these skills to start a
-                competitive programming club in college. In terms of academics,
-                I&apos;ve taken 4 IT classes (all CompTIA based) as well as 4 AP
-                classes, only in the last two years of highschool.
+                competitive programming club in college (or join a pre-existing
+                one!). In terms of academics, I&apos;ve taken 4 dual enrollment
+                IT classes (all CompTIA based) as well as 4 AP classes, only in
+                the last two years of highschool.
               </p>
               <p>
                 There&apos;s a lot that I didn&apos;t mention! If you&apos;d
