@@ -14,7 +14,7 @@ export default function Projects() {
         >
           <h3>tortillas</h3>
           <p>
-            A completely asynchronous (tokio-based) torrenting library/TUI
+            An asynchronous and concurrent (tokio-based) torrenting library/TUI
             written in Rust. Capable of magnet URI/torrent file parsing and
             torrenting/tracking through uTP/UDP/TCP/HTTP.
           </p>

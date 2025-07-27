@@ -21,8 +21,7 @@ export default function ContactMe() {
         <ScrollToTopButton />
       </div>
       <p className="mb-4 text-center text-xs">
-        This site was built with NextJS, Shadcn, React, and others, specifically{" "}
-        <i>without</i> AI.
+        This site was built specifically <i>without</i> AI.
       </p>
     </div>
   );

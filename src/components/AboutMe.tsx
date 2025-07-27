@@ -56,7 +56,7 @@ export default function AboutMe() {
                 Stanford, Berkeley, and more!
               </p>
               <p>
-                Outside of that, I&apos;m working on Tortillas , a library/TUI
+                Outside of that, I&apos;m working on Tortillas, a library/TUI
                 for asynchronous torrenting, made entirely in Rust. If
                 you&apos;re curious, you can take a look at it{" "}
                 <ButtonLink href="#tortillas-project">here</ButtonLink>.
@@ -77,29 +77,24 @@ export default function AboutMe() {
                 <ButtonLink href="#me">this</ButtonLink> out!
               </p>
               <p>
-                When I was 15, I decided to start focusing more on my education
-                and extracurriculars. I successfully completed Harvard&apos;s
-                CS50 admist my sophmore year of highschool, as well as a college
-                level course in the design and analysis of algorithms, hosted by
-                Stanford.
+                I started my formal education with Harvard&apos;s CS50 when I
+                was 15, which gave me a proper starting point for software
+                development. I began with Non-Profit Link, a web application for
+                the non-profits in my area, now used by dog shelters in South
+                Africa. I then created RDI (React-Django-Implementation), which
+                I used to help create byeAI, a blogging site for developers that
+                strictly disallows AI generated content.
               </p>
               <p>
-                This formal education gave me a proper starting point for
-                software development. I began with Non-Profit Link, a web
-                application for the non-profits in my area, now used by dog
-                shelters in South Africa. I then created RDI
-                (React-Django-Implementation), which I used to help create
-                byeAI, a blogging site for developers that strictly disallows AI
-                generated content.
+                I've spent the last 4 months working on{" "}
+                <ButtonLink href="#tortillas-project">Tortillas</ButtonLink>, an
+                asynchronous and concurrent torrenting library/TUI.
               </p>
               <p>
-                In between all of this, I spent a good deal of time studying
-                algorithms and practicing LeetCode. I plan to keep practicing
-                LeetCode this summer (2025), and use these skills to start a
-                competitive programming club in college (or join a pre-existing
-                one!). In terms of academics, I&apos;ve taken 4 dual enrollment
-                IT classes (all CompTIA based) as well as 4 AP classes, only in
-                the last two years of highschool.
+                In terms of academics, I&apos;ve taken 4 dual enrollment IT
+                classes (all CompTIA based) as well as 4 AP classes, only in the
+                last two years of highschool. I scored a 5 on AP Calc AB, AP
+                Computer Science A, and AP Computer Science Principles.
               </p>
               <p>
                 There&apos;s a lot that I didn&apos;t mention! If you&apos;d
