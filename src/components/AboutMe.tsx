@@ -86,7 +86,7 @@ export default function AboutMe() {
                 strictly disallows AI generated content.
               </p>
               <p>
-                I've spent the last 4 months working on{" "}
+                I&apos;ve spent the last 4 months working on{" "}
                 <ButtonLink href="#tortillas-project">Tortillas</ButtonLink>, an
                 asynchronous and concurrent torrenting library/TUI.
               </p>
