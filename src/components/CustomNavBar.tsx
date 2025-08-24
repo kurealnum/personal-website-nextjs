@@ -60,7 +60,7 @@ export default function CustomNavBar() {
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink href="https://docs.google.com/document/d/104CdIhV0xpPLE5--gmSbonsOXHvxtyxsc5pmr79R42k/edit?tab=t.0#heading=h.sr3e2nlhgu9x">
+          <NavigationMenuLink href="https://docs.google.com/document/d/180oIGS-b6a3lX5bJ8rr5woHj9C-0erdY4vaRei85ksw/edit?usp=sharing">
             resume
           </NavigationMenuLink>
         </NavigationMenuItem>

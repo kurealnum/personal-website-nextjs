@@ -15,20 +15,22 @@ export default function Personal() {
       <p>
         I&apos;ve been mountain biking since I was 4 years old, and racing since
         I was 6. Since then, I&apos;ve participated in multiple interscholastic
-        teams, even helping to start one locally when I was 14. My final
-        highschool level race(s) will be occuring this May {"& April"}, although
-        I intend to continue to race well after highschool is over.
+        teams, even helping to start one locally when I was 14. My final high
+        school races occured in the spring of 2025, but I&apos;ll continue my
+        mountainbiking career well past highschool.
       </p>
       <h3 className="mt-4">teaching</h3>
       <p>
-        Teaching is a strong passion of mine. As I age out of the mountain
-        biking team I helped start, I plan to act as a coach for the next
-        generation of youth riders. Additionally, I&apos;ve spent a great deal
-        of time tutoring and learning how to optimally teach. I spent a few
-        hours a week every day of my senior high school year working with
-        students in Algebra I, Algebra II, Trigonometry, and more. I&apos;ve
-        also privately tutored students online, creating lesson plans and
-        curating practice problems.
+        Teaching is a strong passion of mine. I spend 3 nights a week acting as
+        a coach for the next generation of youth riders on the team that I
+        helped create. I usually work with our high school race-focused group,
+        but I&apos;m always happy to help wherever I&apos;m needed.
+        Additionally, I&apos;ve spent a great deal of time tutoring and learning
+        how to optimally teach. I spent nearly every day during my senior high
+        school year either working with students in Algebra I, Algebra II, and
+        Trigonometry, or refining my teaching skills. I&apos;ve also privately
+        tutored students online, creating lesson plans and curating practice
+        problems.
       </p>
       <h3 className="mt-4">sim racing</h3>
       <p className="mb-4">

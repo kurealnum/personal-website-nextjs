@@ -72,6 +72,9 @@ export default function Page() {
               Youtube Content Creation (December 2024 - Present)
             </Link>
           </li>
+          <li>
+            <Link href="#tortillas">Tortillas (February 2025 - Present)</Link>
+          </li>
         </ul>
         <h3>Past (chronological order)</h3>
         <ul>
@@ -158,15 +161,18 @@ export default function Page() {
           <h3 id="team-riding">Team Riding (2019 - Present)</h3>
           <p>
             As mentioned in the section above, I started riding and racing on a
-            NICA team when I was in 6th grade, and my father and I started our
-            own team when I was in 9th grade in our area. This team initially
-            split due to disagreements between coaches and bullying between some
-            of the student athletes, but we’re now bigger than we ever were
-            before, with almost 40 attendees at the majority of our practices.
-            At said practices, I lead rides 95% of the time, develop my skills
-            and fitness, and practice social skills on the trail. I also
-            occasionally work with our younger riders in order to help our
-            coaches to develop our next generation of riders.
+            NICA team (Henrico Composite) when I was in 6th grade, and my father
+            and I started our own team, aptly named Fredericksburg Composite,
+            when I was in 9th grade. This team initially split due to
+            disagreements between coaches and bullying between some of the
+            student athletes, but we’re now bigger than we ever were before,
+            with almost 40 attendees at the majority of our practices. I&apos;ve
+            since graduated and no longer participate in Fredericksburg
+            Composite as a rider, but now as a coach. I attend practices 3 times
+            a week and I usually work with our race-focused high school riders.
+            I&apos;ve taken formal training for both coaching and first aid, and
+            paired with over a decade of mountain biking experience, I bring a
+            lot to the table as a coach.
           </p>
         </div>
 
@@ -360,6 +366,25 @@ export default function Page() {
             days, as well as 3 thousand hours of watch time and 1 thousand
             subscribers. Since then, I have monetized my channel and I upload on
             a semi-consistent basis (about once every month).
+          </p>
+        </div>
+        <div>
+          <h3 id="tortillas">
+            Tortillas, a torrenting library (February 2025 - Present)
+          </h3>
+          <p>
+            Tortillas is a fully concurrent torrenting library written in Rust
+            that I&apos;ve spent an unhealthy amount of time on. It&apos;s also
+            the first large collaborative project that I&apos;ve worked on.
+            Aside from the technical skills that I&apos;ve gained (concurrent
+            computing, astronger understanding of async operations, atomics,
+            managing memory with multiple virtual threads, different models to
+            approach concurrent computing, parsing, etc.), I&apos;ve gotten
+            quite good at documenting my work and managing issues, PRs, and
+            commits appropriately. Tortillas uses conventional commits for every
+            single commit, and we have a specific workflow for introducing a
+            feature/handling bugs: open an issue &rarr; create a branch &rarr;
+            create a draft &rarr; request a review &rarr; merge to main.
           </p>
         </div>
       </ul>

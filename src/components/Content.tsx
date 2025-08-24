@@ -22,7 +22,7 @@ export default function Content() {
       <h3 className="mt-4 text-lg">by the way...</h3>
       <p className="max-w-[500px] p-4 font-light">
         I&apos;ve been featured in Dev.to&apos;s &quot;Top 7 Posts of the
-        week&quot; 3 times, and I&apos;m also an active community moderator.
+        week&quot; 5 times, and I&apos;m also an active community moderator.
       </p>
     </LoadIn>
   );
