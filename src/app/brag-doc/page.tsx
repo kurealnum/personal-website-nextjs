@@ -119,6 +119,12 @@ export default function Page() {
               Personal website revamp (April 8th, 2025 - April 24th, 2025)
             </Link>
           </li>
+          <li>
+            <Link href="#dsrp">
+              The Coding School&apos;s Data Science Research Program (July 7th -
+              August 8th)
+            </Link>
+          </li>
         </ul>
 
         <h3>Miscellaneous achievements {"& certs"}</h3>
@@ -500,6 +506,29 @@ export default function Page() {
             OpenMeteo, OpenFoodFacts, and OMDb API.
           </p>
         </div>
+        <div className="max-w-[500px]">
+          <h3 id="dsrp">
+            Data Science Research Program (July 7th, 2025 - August 8th, 2025)
+          </h3>
+          <p>
+            Through a scholarship and a stipend, I completed a 6-week data
+            science training course. I received formal training in both generic
+            data science skills as well as some machine learning techniques.
+            Throughout the course, I developed my research skills by researching
+            the correlations of debt levels of other countries in correlation
+            with debt levels of the United States. With that, I trained a linear
+            regression model (which utilized k-folds validation where k = 5) on
+            my data and was able to accurately predict the debt levels of the
+            United States (however the model may be overfitted!). I had two
+            opportunities to present my research: in person at the University of
+            Maryland, and online. I chose to do both. If you&apos;re curious,
+            here&apos;s a{" "}
+            <ButtonLink href="https://www.linkedin.com/feed/update/urn:li:activity:7359247634479390720/">
+              post
+            </ButtonLink>{" "}
+            I made about the in-person experience.
+          </p>
+        </div>
         <div>
           <h3 id="website-revamp">
             Personal website revamp (April 8th, 2025 - April 24th, 2025)
@@ -528,34 +557,18 @@ export default function Page() {
               about 200 subscribers on YouTube from this video.
             </p>
             <p className="mb-2">
-              I also had yet another post featured on March 11th, 2025. This
-              post was about Arch Linux and productivity. I also produced a
-              video on this topic (that took about a month to make, and that
-              video garnered almost 100 thousand views on Youtube in a week, and
-              over 1 million impressions. I gained about 2 thousand subscribers
-              from this video.
-            </p>
-            <p>
-              Finally, I had a third post featured on April 1st, 2025. This post
-              was about my experiences with C, ncurses, and a few other low
-              level libraries. I of course produced a video on this, garnering
-              about 18 thousand views and 200 thousand impressions. I also
-              earned the C badge on Dev.to for the most popular C-related post
-              from the past seven days.
+              I was also featured in 4 other &quot;Top 7&quot; posts based off
+              of other blog posts/videos that I made.
             </p>
           </div>
-          <div>
+          <div className="mr-auto">
             <h3 id="grades">Academics</h3>
-            <p className="mb-2">
-              I had a top 3 grade in Pre-Calculus class (97.44%), and while the
-              first two years of highschool were rocky, I maintained a 4.0 GPA
-              throughout the last two years.
-            </p>
-            <p>
-              A few other notable academic achievements: I scored a 5 on the AP
-              CSP exam, and a 1330 on the SAT (junior year, 1410 on practice
-              test)
-            </p>
+            <ul>
+              <li>5 on AP CSP</li>
+              <li>5 on AP CSA</li>
+              <li>5 on AP Calc BC</li>
+              <li>1330 SAT, junior year (1410 on practice)</li>
+            </ul>
           </div>
           <div>
             <h3 id="cs50-cert">CS50</h3>

@@ -50,10 +50,14 @@ export default function AboutMe() {
           <CarouselItem>
             <Tab>
               <p>
-                I&apos;ve recently been accepted to a national data science
-                research program, hosted by The Coding School and a number of
-                notable organizations such as Columbia University, MIT,
-                Stanford, Berkeley, and more!
+                I&apos;ve just finished up a data science research program
+                (hosted by The Coding School), and I&apos;m starting college at
+                the University of Mary Washington (UMW)! I&apos;m also coaching
+                on a local youth mountain biking{" "}
+                <ButtonLink href="https://www.fredericksburgmtb.org/">
+                  team
+                </ButtonLink>{" "}
+                about 3 times a week.
               </p>
               <p>
                 Outside of that, I&apos;m working on Tortillas, a library/TUI
