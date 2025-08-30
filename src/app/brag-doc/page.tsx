@@ -10,7 +10,7 @@ export default function Page() {
       <p className="max-w-[400px]">
         (almost) everything notable I&apos;ve ever done.
       </p>
-      <p> last updated Apr 23rd, 2025</p>
+      <p> last updated August 25th, 2025</p>
       <div className="mb-8 [&_h3]:mt-6 [&_h3]:ml-2 [&_li]:font-light [&_ul]:mx-2">
         <h2 className="mt-8 text-center">Table of Contents</h2>
         <h3>Current</h3>
