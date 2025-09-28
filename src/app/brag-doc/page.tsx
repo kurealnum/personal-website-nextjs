@@ -75,6 +75,11 @@ export default function Page() {
           <li>
             <Link href="#tortillas">Tortillas (February 2025 - Present)</Link>
           </li>
+          <li>
+            <Link href={"#todd-agriscience"}>
+              SWE Intern @ Todd Agriscience (September 2025 - Present)
+            </Link>
+          </li>
         </ul>
         <h3>Past (chronological order)</h3>
         <ul>
@@ -391,6 +396,27 @@ export default function Page() {
             single commit, and we have a specific workflow for introducing a
             feature/handling bugs: open an issue &rarr; create a branch &rarr;
             create a draft &rarr; request a review &rarr; merge to main.
+          </p>
+        </div>
+        <div>
+          <h3 id="todd-agriscience">
+            SWE Intern @ Todd Agriscience (September 2025 - Present)
+          </h3>
+          <p>
+            Through the help of some of my colleagues (
+            <ButtonLink href="https://www.linkedin.com/in/dang-phung/">
+              Dang Phung
+            </ButtonLink>{" "}
+            and{" "}
+            <ButtonLink href="https://www.linkedin.com/in/achen2304/">
+              Cai Chen
+            </ButtonLink>
+            ), I started my internship at Todd Agriscience barely two weeks
+            after I got to Mary Washington (UMW). At the moment, I&apos;m
+            leading a complete rewrite of the frontend (Next.js, Tailwind, all
+            that fun stuff), but I&apos;ll soon be starting on the backend,
+            building everything from the ground up (likely with
+            Firebase/PostgreSQL).
           </p>
         </div>
       </ul>

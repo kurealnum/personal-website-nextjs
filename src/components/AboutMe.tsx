@@ -45,15 +45,24 @@ export default function AboutMe() {
           what I&apos;ve done
         </Button>
       </div>
-      <Carousel setApi={setApi} opts={{ duration: 22, watchDrag: false }}>
+      <Carousel
+        setApi={setApi}
+        opts={{ duration: 22, watchDrag: false }}
+        className="mb-8"
+      >
         <CarouselContent>
           <CarouselItem>
             <Tab>
               <p>
-                I&apos;ve just finished up a data science research program
-                (hosted by The Coding School), and I&apos;m starting college at
-                the University of Mary Washington (UMW)! I&apos;m also coaching
-                on a local youth mountain biking{" "}
+                Currently interning at{" "}
+                <ButtonLink href="https://www.toddagriscience.com/">
+                  Todd Agriscience
+                </ButtonLink>{" "}
+                during my freshman year @ UMW, and working as the Chief Scoring
+                Officer for the{" "}
+                <ButtonLink href="https://virginiamtb.org/">VA NICA</ButtonLink>{" "}
+                league on the weekends. I&apos;m also coaching on my local youth
+                mountain biking{" "}
                 <ButtonLink href="https://www.fredericksburgmtb.org/">
                   team
                 </ButtonLink>{" "}
@@ -64,13 +73,6 @@ export default function AboutMe() {
                 for asynchronous torrenting, made entirely in Rust. If
                 you&apos;re curious, you can take a look at it{" "}
                 <ButtonLink href="#tortillas-project">here</ButtonLink>.
-              </p>
-              <p>
-                My second most recent (major) project is byeAI, a developer
-                content creation site that completely disallows AI generated or
-                assisted content. It&apos;s built from scratch with React,
-                Django, Nginx, and Docker.{" "}
-                <ButtonLink href="#byeai-project">Check it out!</ButtonLink>
               </p>
             </Tab>
           </CarouselItem>
@@ -90,15 +92,22 @@ export default function AboutMe() {
                 strictly disallows AI generated content.
               </p>
               <p>
-                I&apos;ve spent the last 4 months working on{" "}
+                I&apos;ve spent the last 6 months working on{" "}
                 <ButtonLink href="#tortillas-project">Tortillas</ButtonLink>, an
-                asynchronous and concurrent torrenting library/TUI.
+                asynchronous and concurrent torrenting library/TUI, and over the
+                summer of 2025,{" "}
+                <ButtonLink href="https://www.linkedin.com/feed/update/urn:li:activity:7359247634479390720/">
+                  I completed
+                </ButtonLink>{" "}
+                an intensive data science research program hosted by The Coding
+                School.
               </p>
               <p>
                 In terms of academics, I&apos;ve taken 4 dual enrollment IT
                 classes (all CompTIA based) as well as 4 AP classes, only in the
                 last two years of highschool. I scored a 5 on AP Calc AB, AP
-                Computer Science A, and AP Computer Science Principles.
+                Computer Science A, and AP Computer Science Principles. I&apos;m
+                also currently maintaining a 4.0 @ UMW.
               </p>
               <p>
                 There&apos;s a lot that I didn&apos;t mention! If you&apos;d
