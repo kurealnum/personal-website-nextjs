@@ -16,19 +16,22 @@ export default function Skills() {
         <Skill src="typescript.svg" />
         <Skill src="css3-original.svg" />
         <Skill src="html5-original.svg" />
+        <Skill src="nextjs.svg" />
+        <Skill src="expressjs.svg" className="" />
+        <Skill src="vitest.svg" />
+        <Skill src="react-original.svg" />
         <Skill
           src="reactrouter.svg"
           className="rounded-md bg-neutral-300 p-1"
         />
         <Skill src="python-original.svg" />
-        <Skill src="react-original.svg" />
-        <Skill src="tailwindcss-original.svg" />
         <Skill src="django-plain.svg" />
-        <Skill src="nginx.svg" />
         <Skill
           src="djangorest-original.svg"
           className="rounded-md bg-neutral-300"
         />
+        <Skill src="nginx.svg" />
+        <Skill src="tailwindcss-original.svg" />
         <Skill src="docker-plain.svg" />
       </div>
       <h3 className="mt-8">general tools</h3>

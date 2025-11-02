@@ -77,7 +77,12 @@ export default function Page() {
           </li>
           <li>
             <Link href={"#todd-agriscience"}>
-              SWE Intern @ Todd Agriscience (September 2025 - Present)
+              Founding SWE @ Todd Agriscience (September 2025 - Present)
+            </Link>
+          </li>
+          <li>
+            <Link href={"#hoa-flo"}>
+              SWE Intern @ HoaFlo (November 2025 - Present)
             </Link>
           </li>
         </ul>
@@ -400,7 +405,7 @@ export default function Page() {
         </div>
         <div>
           <h3 id="todd-agriscience">
-            SWE Intern @ Todd Agriscience (September 2025 - Present)
+            Founding SWE @ Todd Agriscience (September 2025 - Present)
           </h3>
           <p>
             Through the help of some of my colleagues (
@@ -411,12 +416,22 @@ export default function Page() {
             <ButtonLink href="https://www.linkedin.com/in/achen2304/">
               Cai Chen
             </ButtonLink>
-            ), I started my internship at Todd Agriscience barely two weeks
-            after I got to Mary Washington (UMW). At the moment, I&apos;m
-            leading a complete rewrite of the frontend (Next.js, Tailwind, all
-            that fun stuff), but I&apos;ll soon be starting on the backend,
-            building everything from the ground up (likely with
-            Firebase/PostgreSQL).
+            ), I started working at Todd Agriscience barely two weeks after I
+            got to Mary Washington (UMW). I&apos;m kinda doing{" "}
+            <i>all the roles</i> at this point. We&apos;re a startup, after all.
+            Frontend, backend, devops -- you name it, I&apos;ve probably done it
+            (or at least tried to).
+          </p>
+        </div>
+        <div>
+          <h3 id="hoa-flo">
+            SWE Intern @ Todd Agriscience (November 2025 - Present)
+          </h3>
+          <p>
+            Developing enterprise grade software (web development) with two
+            really cool people. Primarily doing frontend work at the moment, but
+            that&apos;s subject to change. If you couldn&apos;t tell by now, I
+            quite enjoy the fast paced nature of startups.
           </p>
         </div>
       </ul>

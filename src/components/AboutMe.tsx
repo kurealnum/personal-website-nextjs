@@ -54,24 +54,32 @@ export default function AboutMe() {
           <CarouselItem>
             <Tab>
               <p>
-                Currently interning at{" "}
+                Founding SWE @{" "}
                 <ButtonLink href="https://www.toddagriscience.com/">
                   Todd Agriscience
-                </ButtonLink>{" "}
-                during my freshman year @ UMW, and working as the Chief Scoring
-                Officer for the{" "}
+                </ButtonLink>
+                , SWE intern @{" "}
+                <ButtonLink href="https://www.linkedin.com/company/hoaflo/">
+                  HoaFlo
+                </ButtonLink>
+                .
+              </p>
+              <p>
+                Past SWE work, I&apos; working as the Chief Scoring Officer for
+                the{" "}
                 <ButtonLink href="https://virginiamtb.org/">VA NICA</ButtonLink>{" "}
                 league on the weekends. I&apos;m also coaching on my local youth
                 mountain biking{" "}
                 <ButtonLink href="https://www.fredericksburgmtb.org/">
                   team
                 </ButtonLink>{" "}
-                about 3 times a week.
+                about 3 times a week (during the season). And I&apos;m attending
+                the University of Mary Washington full time, of course.
               </p>
               <p>
-                Outside of that, I&apos;m working on Tortillas, a library/TUI
-                for asynchronous torrenting, made entirely in Rust. If
-                you&apos;re curious, you can take a look at it{" "}
+                When I have the time, I&apos;m working on Tortillas, a
+                library/TUI for asynchronous torrenting, made entirely in Rust.
+                If you&apos;re curious, you can take a look at it{" "}
                 <ButtonLink href="#tortillas-project">here</ButtonLink>.
               </p>
             </Tab>
