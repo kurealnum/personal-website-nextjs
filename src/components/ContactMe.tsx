@@ -11,7 +11,7 @@ export default function ContactMe() {
         <h1 className="text-3xl">contact me</h1>
         <p className="font-light">Feel free to reach out!</p>
         <div className="mt-2 flex flex-row gap-4">
-          <a href="https://linktr.ee/kureal">
+          <a href="https://linktr.ee/oscargaske">
             <LinkIcon />
           </a>
           <a href="mailto:oscar.gaske.cs@gmail.com">
