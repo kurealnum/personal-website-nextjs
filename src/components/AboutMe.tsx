@@ -58,11 +58,7 @@ export default function AboutMe() {
                 <ButtonLink href="https://www.toddagriscience.com/">
                   Todd Agriscience
                 </ButtonLink>
-                , SWE intern @{" "}
-                <ButtonLink href="https://www.linkedin.com/company/hoaflo/">
-                  HoaFlo
-                </ButtonLink>
-                .
+                , shipping 10x.
               </p>
               <p>
                 Past SWE work, I&apos; working as the Chief Scoring Officer for
@@ -73,8 +69,8 @@ export default function AboutMe() {
                 <ButtonLink href="https://www.fredericksburgmtb.org/">
                   team
                 </ButtonLink>{" "}
-                about 3 times a week (during the season). And I&apos;m attending
-                the University of Mary Washington full time, of course.
+                about 3 times a week (during the season). I&apos;m also
+                attending the University of Mary Washington full time.
               </p>
               <p>
                 When I have the time, I&apos;m working on Tortillas, a

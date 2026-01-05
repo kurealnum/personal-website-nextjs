@@ -47,6 +47,15 @@ export default function Personal() {
       <Suspense fallback={<Loader />}>
         <YouTubeVideo id="ZqvR1H9QSNg" />
       </Suspense>
+      <h3 className="mt-4">minecraft</h3>
+      <p className="mb-4">
+        When I have the time, I really enjoy Minecraft. I&apos;m currently
+        working on a massive castle (think of a wall about 3x the size of
+        King&apos;s Landing from Game of Thrones), and I stream quite a bit.
+      </p>
+      <Suspense fallback={<Loader />}>
+        <YouTubeVideo id="2_nx5spNBEw" />
+      </Suspense>
       <p className="mt-16">thanks for reading!</p>
       <ScrollToIdButton id="#contact-me">
         <ChevronDown />
