@@ -25,7 +25,7 @@ export default function CustomNavBar() {
             className="bg-popover"
           >
             <ul className="w-[150px]">
-              <NavigationMenuLink href="/#about-me">
+              <NavigationMenuLink href="/#about-me" className="hover:non">
                 what I do
               </NavigationMenuLink>
               <NavigationMenuLink href="/#projects">

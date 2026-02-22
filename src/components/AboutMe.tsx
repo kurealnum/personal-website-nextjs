@@ -11,6 +11,7 @@ import { useState } from "react";
 import Tab from "./Tab";
 import LoadIn from "./LoadIn";
 import ButtonLink from "./ButtonLink";
+import Fade from "embla-carousel-fade";
 
 export default function AboutMe() {
   const [api, setApi] = useState<CarouselApi>();
@@ -47,7 +48,8 @@ export default function AboutMe() {
       </div>
       <Carousel
         setApi={setApi}
-        opts={{ duration: 22, watchDrag: false }}
+        opts={{ duration: 35, watchDrag: false }}
+        plugins={[Fade()]}
         className="mb-8"
       >
         <CarouselContent>
@@ -70,13 +72,8 @@ export default function AboutMe() {
                   team
                 </ButtonLink>{" "}
                 about 3 times a week (during the season). I&apos;m also
-                attending the University of Mary Washington full time.
-              </p>
-              <p>
-                When I have the time, I&apos;m working on Tortillas, a
-                library/TUI for asynchronous torrenting, made entirely in Rust.
-                If you&apos;re curious, you can take a look at it{" "}
-                <ButtonLink href="#tortillas-project">here</ButtonLink>.
+                attending the University of Mary Washington full time (Dean's
+                List).
               </p>
             </Tab>
           </CarouselItem>
