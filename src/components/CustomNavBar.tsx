@@ -55,6 +55,9 @@ export default function CustomNavBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <NavigationMenuLink href="/writings">writings</NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuLink href="/#contact-me">
             contact me
           </NavigationMenuLink>
