@@ -5,7 +5,7 @@ import LoadIn from "./LoadIn";
 export default function Projects() {
   return (
     <LoadIn>
-      <h2 className="mx-auto mb-8 text-center">projects</h2>
+      <h2 className="mx-auto mb-8 text-center">cool things I've made</h2>
       <div className="mx-auto flex max-w-[80%] flex-row flex-wrap items-start justify-center gap-8 gap-y-8">
         <ContentThumbnail
           imgSrc="/tortillasthumbnail.png"

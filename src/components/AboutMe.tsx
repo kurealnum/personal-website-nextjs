@@ -60,7 +60,7 @@ export default function AboutMe() {
                 <ButtonLink href="https://www.toddagriscience.com/">
                   Todd Agriscience
                 </ButtonLink>
-                , shipping 10x.
+                , shipping 10x. MK5 Supra by May 2027.
               </p>
               <p>
                 Past SWE work, I&apos; working as the Chief Scoring Officer for
@@ -71,9 +71,8 @@ export default function AboutMe() {
                 <ButtonLink href="https://www.fredericksburgmtb.org/">
                   team
                 </ButtonLink>{" "}
-                about 3 times a week (during the season). I&apos;m also
-                attending the University of Mary Washington full time (Dean's
-                List).
+                when I can. I&apos;m also attending the University of Mary
+                Washington full time (Dean's List).
               </p>
             </Tab>
           </CarouselItem>
@@ -84,31 +83,16 @@ export default function AboutMe() {
                 <ButtonLink href="#me">this</ButtonLink> out!
               </p>
               <p>
-                I started my formal education with Harvard&apos;s CS50 when I
-                was 15, which gave me a proper starting point for software
-                development. I began with Non-Profit Link, a web application for
-                the non-profits in my area, now used by dog shelters in South
-                Africa. I then created RDI (React-Django-Implementation), which
-                I used to help create byeAI, a blogging site for developers that
-                strictly disallows AI generated content.
+                Started with CS50 when I was 15. Did a open source projects/SaaS
+                startup attempts, then made a BitTorrent library in Rust that
+                (unofficially) outperforms the leading torrent library. I also
+                completed a research program while I was doing this.
               </p>
               <p>
-                I&apos;ve spent the last 6 months working on{" "}
-                <ButtonLink href="#tortillas-project">Tortillas</ButtonLink>, an
-                asynchronous and concurrent torrenting library/TUI, and over the
-                summer of 2025,{" "}
-                <ButtonLink href="https://www.linkedin.com/feed/update/urn:li:activity:7359247634479390720/">
-                  I completed
-                </ButtonLink>{" "}
-                an intensive data science research program hosted by The Coding
-                School.
-              </p>
-              <p>
-                In terms of academics, I&apos;ve taken 4 dual enrollment IT
-                classes (all CompTIA based) as well as 4 AP classes, only in the
-                last two years of highschool. I scored a 5 on AP Calc AB, AP
-                Computer Science A, and AP Computer Science Principles. I&apos;m
-                also currently maintaining a 4.0 @ UMW.
+                I then interned at two companies as a software engineer in the
+                first semester of college. Started running the software side of
+                one of those companies as a founding engineer. Most recently, a
+                fully-backed startup flew me to San Francisco.
               </p>
               <p>
                 There&apos;s a lot that I didn&apos;t mention! If you&apos;d
