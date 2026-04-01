@@ -56,11 +56,15 @@ export default function AboutMe() {
           <CarouselItem>
             <Tab>
               <p>
-                Founding SWE @{" "}
-                <ButtonLink href="https://www.toddagriscience.com/">
-                  Todd Agriscience
+                Building{" "}
+                <ButtonLink href="https://choreographd.com/">
+                  ChoreoGraphd
                 </ButtonLink>
-                , shipping 10x. MK5 Supra by May 2027.
+                , incoming @{" "}
+                <ButtonLink href="https://zenithflow.com/">
+                  Zenith Flow
+                </ButtonLink>
+                . MK5 Supra by May 2027.
               </p>
               <p>
                 Past SWE work, I&apos; working as the Chief Scoring Officer for
@@ -91,13 +95,14 @@ export default function AboutMe() {
               <p>
                 I then interned at two companies as a software engineer in the
                 first semester of college. Started running the software side of
-                one of those companies as a founding engineer. Most recently, a
-                fully-backed startup flew me to San Francisco.
+                one of those companies as a founding engineer before my first
+                semester ended.
               </p>
               <p>
-                There&apos;s a lot that I didn&apos;t mention! If you&apos;d
-                like to know more, check out my{" "}
-                <ButtonLink href="/brag-doc">brag doc.</ButtonLink>
+                Then a fully-backed startup flew me to San Francisco over spring
+                break. I turned down their offer to intern with them since I
+                wanted to intern with a local startup instead while building my
+                own tools on the side.
               </p>
             </Tab>
           </CarouselItem>

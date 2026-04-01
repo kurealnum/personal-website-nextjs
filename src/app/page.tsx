@@ -8,6 +8,8 @@ import Personal from "@/components/Personal";
 import ContactMe from "@/components/ContactMe";
 import ScrollToIdButton from "@/components/ScrollToIdButton";
 import MotionConfigWrapper from "@/components/MotionConfigWrapper";
+import Link from "next/link";
+import ButtonLink from "@/components/ButtonLink";
 
 export default function Page() {
   return (
@@ -25,8 +27,13 @@ export default function Page() {
                   <Pfp />
                 </div>
                 <p className="m-0 p-0 text-center text-sm md:text-base">
-                  full-stack web developer specializing in backend development,
-                  content creator, low level programmer. nvim {"& arch user"}
+                  building{" "}
+                  <ButtonLink href={"https://choreographd.com"}>
+                    ChoreoGraphd
+                  </ButtonLink>
+                  {". "}
+                  previous founding SWE @ Todd Agriscience at 18 y/o. nvim{" "}
+                  {"& arch user"}
                 </p>
               </div>
             </div>
