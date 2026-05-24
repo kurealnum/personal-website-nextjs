@@ -60,7 +60,9 @@ export default function AboutMe() {
                 <ButtonLink href="https://choreographd.com/">
                   ChoreoGraphd
                 </ButtonLink>
-                , incoming @{" "}
+                {" & "}
+                <ButtonLink href="https://dearly.to/">Dearly</ButtonLink>
+                {" as an intern @ "}
                 <ButtonLink href="https://zenithflow.com/">
                   Zenith Flow
                 </ButtonLink>
@@ -100,9 +102,9 @@ export default function AboutMe() {
               </p>
               <p>
                 Then a fully-backed startup flew me to San Francisco over spring
-                break. I turned down their offer to intern with them since I
-                wanted to intern with a local startup instead while building my
-                own tools on the side.
+                break. I turned down their offer to work with them since I
+                wanted to intern with a local startup while building my own
+                tools on the side.
               </p>
             </Tab>
           </CarouselItem>

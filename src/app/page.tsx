@@ -8,7 +8,6 @@ import Personal from "@/components/Personal";
 import ContactMe from "@/components/ContactMe";
 import ScrollToIdButton from "@/components/ScrollToIdButton";
 import MotionConfigWrapper from "@/components/MotionConfigWrapper";
-import Link from "next/link";
 import ButtonLink from "@/components/ButtonLink";
 
 export default function Page() {
@@ -31,8 +30,12 @@ export default function Page() {
                   <ButtonLink href={"https://choreographd.com"}>
                     ChoreoGraphd
                   </ButtonLink>
+                  {" & "}
+                  <ButtonLink href={"https://dearly.to"}>
+                    Dearly
+                  </ButtonLink>
                   {". "}
-                  previous founding SWE @ Todd Agriscience at 18 y/o. nvim{" "}
+                  interning @ ZenithFlow. previous founding SWE @ Todd Agriscience. nvim{" "}
                   {"& arch user"}
                 </p>
               </div>

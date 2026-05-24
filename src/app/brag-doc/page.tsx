@@ -10,7 +10,7 @@ export default function Page() {
       <p className="max-w-[400px]">
         (almost) everything notable I&apos;ve ever done.
       </p>
-      <p> last updated August 25th, 2025</p>
+      <p> last updated May 24th, 2026</p>
       <div className="mb-8 [&_h3]:mt-6 [&_h3]:ml-2 [&_li]:font-light [&_ul]:mx-2">
         <h2 className="mt-8 text-center">Table of Contents</h2>
         <h3>Current</h3>
@@ -76,8 +76,16 @@ export default function Page() {
             <Link href="#tortillas">Tortillas (February 2025 - Present)</Link>
           </li>
           <li>
-            <Link href={"#hoa-flo"}>
-              SWE Intern @ HoaFlo (November 2025 - February 2026)
+            <Link href={"#zenithflow"}>
+              SWE Intern @ ZenithFlow (2026 - Present)
+            </Link>
+          </li>
+          <li>
+            <Link href={"#dearly"}>Dearly (2026 - Present)</Link>
+          </li>
+          <li>
+            <Link href={"#choreographd-building"}>
+              Building Choreographd (2025 - Present)
             </Link>
           </li>
           <li>
@@ -404,14 +412,37 @@ export default function Page() {
           </p>
         </div>
         <div>
-          <h3 id="hoa-flo">
-            SWE Intern @ Todd Agriscience (November 2025 - Present)
+          <h3 id="zenithflow">SWE Intern @ ZenithFlow (2026 - Present)</h3>
+          <p>
+            Working as a full-stack software engineer on ZenithFlow's core
+            platform. Contributed to multiple derisk spikes for their autonomous
+            multi-agent AI system, including building a Cypher AST parser with
+            100% pass rate on write-query detection. On the platform side,
+            managed critical-severity production bugs end-to-end, resolving
+            failures across FastAPI, Pydantic validation, and React rendering.
+            Extended the frontend architecture with new UI/UX features that
+            leverage multiple AI workflows, with a focus on accessible
+            interaction patterns and internationalization across 11 locales.
+          </p>
+        </div>
+        <div>
+          <h3 id="dearly">Dearly (2026 - Present)</h3>
+          <p>
+            Dearly (dearly.to) is a SaaS product that helps users create a
+            permanent memory for their loved ones - e-cards but upgraded.
+            Completely custom scrollable stories.
+          </p>
+        </div>
+        <div>
+          <h3 id="choreographd-building">
+            Building Choreographd (2026 - Present)
           </h3>
           <p>
-            Developing enterprise grade software (web development) with two
-            really cool people. Primarily doing frontend work at the moment, but
-            that&apos;s subject to change. If you couldn&apos;t tell by now, I
-            quite enjoy the fast paced nature of startups.
+            Choreographd (choreographd.com) provides a way for solo founders to
+            effectively organize their work. We help you figure out what to do
+            next + manage context switching. Choreographd was built with
+            practical usage in mind, using tried-and-true methodology from top
+            VCs, YC alum, and successful founders.
           </p>
         </div>
         <div>
