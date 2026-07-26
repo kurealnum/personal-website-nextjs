@@ -10,7 +10,21 @@ export default function Skills() {
       <p className="text-center font-light">
         or all the noteworthy things that I know how to use
       </p>
-      <h3 className="mt-8">web dev stack</h3>
+      <h3 className="mt-8">general tools</h3>
+      <div className="flex max-w-[440px] flex-row flex-wrap justify-center gap-2">
+        <Skill src="rust.svg" />
+        <Skill src="go-gopher.svg" />
+        <Skill src="c-original.svg" />
+        <Skill src="java-original.svg" />
+        <Skill src="natsio-icon.svg" />
+        <Skill src="git-original.svg" />
+        <Skill src="sqlite-original.svg" />
+        <Skill src="postgresql-plain.svg" />
+        <Skill src="grpc-logo.svg" />
+        <Skill src="linux.svg" />
+        <Skill src="latex.svg" className="rounded-md bg-neutral-300 p-1" />
+      </div>
+      <h3 className="mt-8">web dev stuff</h3>
       <div className="flex max-w-[440px] flex-row flex-wrap justify-center gap-2">
         <Skill src="javascript-original.svg" />
         <Skill src="typescript.svg" />
@@ -34,22 +48,10 @@ export default function Skills() {
         <Skill src="tailwindcss-original.svg" />
         <Skill src="docker-plain.svg" />
       </div>
-      <h3 className="mt-8">general tools</h3>
-      <div className="flex max-w-[300px] flex-row flex-wrap justify-center gap-2">
-        <Skill src="c-original.svg" />
-        <Skill src="java-original.svg" />
-        <Skill src="rust.svg" />
-        <Skill src="git-original.svg" />
-        <Skill src="sqlite-original.svg" />
-        <Skill src="postgresql-plain.svg" />
-        <Skill src="linux.svg" />
-        <Skill src="latex.svg" className="rounded-md bg-neutral-300 p-1" />
-      </div>
       <h3 className="mt-8">misc. tech</h3>
       <div className="flex flex-row flex-wrap justify-center gap-2">
         <Skill src="neovim-original.svg" />
         <Skill src="archlinux-original.svg" />
-        <Skill src="arduino.svg" />
         <Skill src="davinci.svg" />
         <Skill src="figma.svg" />
       </div>

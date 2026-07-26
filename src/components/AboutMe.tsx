@@ -58,18 +58,17 @@ export default function AboutMe() {
               <p>
                 Building{" "}
                 <ButtonLink href="https://choreographd.com/">
-                  ChoreoGraphd
+                  Choreographd
                 </ButtonLink>
-                {" & "}
-                <ButtonLink href="https://dearly.to/">Dearly</ButtonLink>
-                {" as an intern @ "}
+                , prediction engine (private), and more
+                {" while working as an SWE @ "}
                 <ButtonLink href="https://zenithflow.com/">
                   Zenith Flow
                 </ButtonLink>
                 . MK5 Supra by May 2027.
               </p>
               <p>
-                Past SWE work, I&apos; working as the Chief Scoring Officer for
+                Past SWE work, I&apos;m working as the Chief Scoring Officer for
                 the{" "}
                 <ButtonLink href="https://virginiamtb.org/">VA NICA</ButtonLink>{" "}
                 league on the weekends. I&apos;m also coaching on my local youth
@@ -97,14 +96,14 @@ export default function AboutMe() {
               <p>
                 I then interned at two companies as a software engineer in the
                 first semester of college. Started running the software side of
-                one of those companies as a founding engineer before my first
-                semester ended.
+                one of those companies as their founding engineer before my
+                first semester ended.
               </p>
               <p>
-                Then a fully-backed startup flew me to San Francisco over spring
+                Then a VC-backed startup flew me to San Francisco over spring
                 break. I turned down their offer to work with them since I
-                wanted to intern with a local startup while building my own
-                tools on the side.
+                wanted to work at a local startup while building my own tools on
+                the side.
               </p>
             </Tab>
           </CarouselItem>

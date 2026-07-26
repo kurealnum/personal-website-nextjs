@@ -28,15 +28,12 @@ export default function Page() {
                 <p className="m-0 p-0 text-center text-sm md:text-base">
                   building{" "}
                   <ButtonLink href={"https://choreographd.com"}>
-                    ChoreoGraphd
-                  </ButtonLink>
-                  {" & "}
-                  <ButtonLink href={"https://dearly.to"}>
-                    Dearly
-                  </ButtonLink>
+                    Choreographd
+                  </ButtonLink>{" "}
+                  & other things
                   {". "}
-                  interning @ ZenithFlow. previous founding SWE @ Todd Agriscience. nvim{" "}
-                  {"& arch user"}
+                  swe @ ZenithFlow. previous founding SWE @ Todd Agriscience.
+                  nvim {"& arch user"}
                 </p>
               </div>
             </div>
