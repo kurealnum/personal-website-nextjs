@@ -11,7 +11,7 @@ export default function ContentThumbnail({
 }: {
   children: React.ReactNode;
   imgSrc?: string;
-  href: string;
+  href?: string;
   id?: string;
 }) {
   return (
